@@ -8,6 +8,7 @@ import pic2excel
 from Sheet import Sheet
 from tkinter import Tk
 from tkinter import filedialog
+from constants import *
 
 warnings.filterwarnings('ignore')
 
@@ -16,43 +17,40 @@ EXAM = 2
 EXPORT_WITH_FORM = 1
 EXPORT_NEW = 2
 root = Tk()
-FILED_NAME = "姓名"
-FILED_COMMIT_STATE = "提交状态"
-FILED_COMMIT_STATE
 
 
 def add_submit_count(excel, csv, export_type):
     for i in range(len(csv.data)):
-        index = find(excel, csv.get(i, "姓名"))
+        index = find(excel, csv.get(i, FIELD_NAME))
         if index is not None:
-            if csv.get(i, "提交状态") == "已提交":
+            if csv.get(i, FIELD_COMMIT_STATE) == "已提交":
                 if export_type == EXPORT_NEW:
                     excel.set(index, csv.filename, "✓")
                 else:
-                    rate = excel.get(index, "作业完成率%")
-                    excel.set(index, "作业完成率%", 1 if rate is None else rate + 1)
+                    rate = excel.get(index, FIELD_WORK_COMPLETION)
+                    excel.set(index, FIELD_WORK_COMPLETION, 1 if rate is None else rate + 1)
             elif export_type == EXPORT_NEW:
                 excel.set(index, csv.filename, "×")
 
 
 def calculate(excel, count, export_type):
     for i in range(len(excel.data)):
-        student_name = excel.get(i, "姓名")
+        student_name = excel.get(i, FIELD_NAME)
         if student_name is not None:
             if export_type == EXPORT_NEW:
                 submit_count = excel.data[i].count("✓")
             else:
-                submit_count = excel.get(i, "作业完成率%")
+                submit_count = excel.get(i, FIELD_WORK_COMPLETION)
             rate_str = "%.2f" % (0 if submit_count is None else submit_count / count * 100) + "%"
-            excel.set(i, "作业完成率%", rate_str)
+            excel.set(i, FIELD_WORK_COMPLETION, rate_str)
             print(student_name + "作业完成率：" + rate_str)
 
 
 def statistics_homework(excel, csv_list, export_type):
     count = 0
-    excel.excel_init("作业完成率%")
+    excel.excel_init(FIELD_WORK_COMPLETION)
     for csv in csv_list:
-        if not csv.title.__contains__("提交状态"):
+        if not csv.title.__contains__(FIELD_COMMIT_STATE):
             print("《" + csv.filename + "》非作业文件，不对其进行统计")
             continue
         else:
@@ -77,36 +75,36 @@ def is_float(string):
 
 
 def statistics_exam(excel, csv_list, export_type):
-    excel.excel_init("考试成绩")
+    excel.excel_init(FIELD_SCORE)
     for csv in csv_list:
-        if not csv.title_contain("得分"):
+        if not csv.title_contain(FIELD_SCORE):
             print("《" + csv.filename + "》非成绩单，不对其进行统计")
             continue
         else:
             if export_type == EXPORT_NEW:
-                title = ["学员id", "姓名", "客观题得分", "主观题得分", "考试成绩"]
+                title = [FIELD_UID, FIELD_NAME, FIELD_OBJECTIVE_SCORE, FIELD_SUBJECTIVE_SCORE, FIELD_SCORE]
                 form = []
                 for i in range(len(csv.data)):
-                    row = [csv.get(i, "学员id"), csv.get(i, "真实姓名"), csv.get(i, "客观题得分"),
-                           csv.get(i, "主观题得分"), csv.get(i, "得分")]
+                    row = [csv.get(i, FIELD_UID), csv.get(i, FIELD_REAL_NAME), csv.get(i, FIELD_OBJECTIVE_SCORE),
+                           csv.get(i, FIELD_SUBJECTIVE_SCORE), csv.get(i, FIELD_SCORE)]
                     form.append(row)
                 form.insert(0, title)
                 excel = Sheet("output.xlsx", form)
                 output(excel, csv.filename)
             else:
                 for i in range(len(csv.data)):
-                    index = find(excel, csv.get(i, "真实姓名"))
+                    index = find(excel, csv.get(i, FIELD_REAL_NAME))
                     if index is not None:
-                        excel.set(index, "考试成绩", csv.get(i, "得分"))
+                        excel.set(index, FIELD_SCORE, csv.get(i, FIELD_SCORE))
                 output(excel, excel.filename)
 
 
 def remove(excel, csv_list):
     for csv in csv_list:
         for i in range(len(csv.data)):
-            index = find(excel, csv.get(i, "姓名"))
+            index = find(excel, csv.get(i, FIELD_NAME))
             if index is not None:
-                print("删除学员：" + csv.get(i, "姓名"))
+                print("删除学员：" + csv.get(i, FIELD_NAME))
                 del excel.data[index]
     return excel
 
@@ -116,14 +114,14 @@ def remain(excel, csv_list):
     new_excel = []
     for csv in csv_list:
         for i in range(len(csv.data)):
-            name = csv.get(i, "姓名")
+            name = csv.get(i, FIELD_NAME)
             index = find(excel, name)
             if index is not None and not remain_list.__contains__(name):
                 new_excel.append(excel.data[index])
             if not remain_list.__contains__(name):
                 remain_list.append(name)
     for i in range(len(excel.data)):
-        name = excel.get(i, "姓名")
+        name = excel.get(i, FIELD_NAME)
         if name is not None and not remain_list.__contains__(name):
             print("删除学员:" + name)
     new_excel.sort(key=index_sort)
@@ -159,9 +157,9 @@ def output(excel, file_name):
 
 def find(excel, name):
     for i in range(len(excel.data)):
-        if excel.get(i, "姓名") == name:
+        if excel.get(i, FIELD_NAME) == name:
             return i
-        elif excel.get(i, "真实姓名") == name:
+        elif excel.get(i, FIELD_REAL_NAME) == name:
             return i
 
 
@@ -219,12 +217,12 @@ def select_out_type(step_type):
                 else:
                     return Sheet(os.path.basename(file), CsvParser.read_csv(file)), csv_list, EXPORT_WITH_FORM
             elif num == EXPORT_NEW:
-                title = ['序号', '姓名']
+                title = [FIELD_INDEX, FIELD_NAME]
                 excel = Sheet("output.xlsx", [title])
                 for csv in csv_list:
                     for i in range(len(csv.data)):
-                        if find(excel, csv.get(i, '姓名')) is None:
-                            e_row = [csv.get(i, '序号'), csv.get(i, '姓名')]
+                        if find(excel, csv.get(i, FIELD_NAME)) is None:
+                            e_row = [csv.get(i, FIELD_INDEX), csv.get(i, FIELD_NAME)]
                             excel.data.append(e_row)
                 return excel, csv_list, EXPORT_NEW
             else:
