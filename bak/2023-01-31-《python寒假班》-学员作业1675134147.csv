@@ -1,0 +1,1038 @@
+序号,用户ID,学员昵称,备注,姓名,手机号码,最近采集号码,提交状态,提交时间,提交文字内容,提交图片内容,提交语音内容,批改老师,点评时间,点评文字内容,点评图片内容,点评语音内容
+1,u_63a1a618255be_KFCXKpaTiB,田佳雨,,田佳雨,"13991722753	",,已提交,"2023-01-12 19:37:40	",https://blog.csdn.net/m0_64940629/article/details/128664436?spm=1001.2014.3001.5502,,,管理台,"2023-01-13 09:05:07	","赞！博客写的很不错！！
+",,
+2,u_624d915a5aebe_Q7nELjWRqX,张兴宇,,张兴宇,"19929386878	","19929386878	",已提交,"2023-01-12 16:30:47	",[图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ed63dcdeaff06e960f44f08931b8a254.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/460ec71a0732a405d6b3624950f12c27.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ba93d02543673f176f437184351ed53e.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/30acd185dee8835ea75afa6a209313ec.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/40251ea79022b3969d20a5fa80ec3235.png",,管理台,"2023-01-12 17:51:56	",图片版式可以，程序结构严谨，结果正确，加油！,,
+3,u_62824e109e09f_V5gcLk7GI4,卢浩,,卢浩,"18652958938	","18652958938	",已提交,"2023-01-10 20:38:23	",[图片][图片][图片][图片][图片][图片],"http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/2437ece935d741c6d23c2668d277a52c.jpg | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/ef36e4a6ec6e37af8b1ce81f8a8c0bff.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/7ca7b5e87b17783ed772944cdfadb8d5.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/df37df3f254823bd4447c8ae16d11c54.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/64bb955237f93436549d156c004a2b9c.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/c0c724a2a76153e60ea57f3da95aabd5.png",,管理台,"2023-01-12 16:27:21	","总体格式可以，答案清晰，继续保持
+",,
+4,u_61a5bc59ad86e_IT9FrOJ5YZ,张瑞祥,,张瑞祥,"18687329636	","18687329636	",已提交,"2023-01-10 17:46:45	",http://t.csdn.cn/BB9Dj,,,管理台,"2023-01-12 18:12:06	",博客写的不错！！答案清晰，继续保持,,
+5,u_61acaa53810ee_WSzOKAS3dq,潘云飞,,潘云飞,"15250582289	","15250582289	",已提交,"2023-01-10 17:29:01	","# 1
+x = 77
+print('%c  %X'%(x+32,x+32))
+# 结果： m  6D
+# 2
+x = 5935.1476
+print('%5.3f\t%e\n%12.5f'%(x,x,x))
+#结果： 
+# 5935.148	5.935148e+03
+#   5935.14760
+# 3
+x = 2.5
+y = 4.7
+a = 7
+print(x+a%3*int(x+y)%2//4)
+# 结果：2.5
+# 4
+a = 3
+b = 4
+c = 5
+print(a or b+c and b-c)
+print(a+b>c and b==c)
+# 结果：
+# 3
+# False
+
+
+x = int(input('输入一个两位数的x：'))
+y = int(input('输入一个两位数的y：'))
+z = y // 10 * 1000 + x % 10 * 100 + x // 10 * 10 + y % 10
+print('z的值为：', z)
+# 结果
+# 输入一个两位数的x：25
+# 输入一个两位数的y：46
+# z的值为： 4526
+x = int(input('请输入0-1000之间的数:'))
+y = x % 10 + (x // 10 % 10) + (x // 10 // 10)
+print('各位数字之和为:', y)
+# 结果
+# 请输入0-1000之间的数:932
+# 各位数字之和为: 14
+v = float(input('输入起飞速度v：'))
+a = float(input('输入飞机的加速度a：'))
+length = (v * v) / (2 * a)
+print('length:', length)
+# 结果
+# 输入起飞速度v：60
+# 输入飞机的加速度a：3.5
+# length: 514.2857142857143
+import turtle as a
+
+a.pensize(5)
+a.color('black')
+a.forward(200)
+a.right(90)
+a.forward(200)
+a.right(90)
+a.forward(200)
+a.right(90)
+a.forward(200)
+a.right(90)
+a.penup()
+a.goto(0, -100)
+a.pendown()
+a.forward(200)
+a.right(90)
+a.penup()
+a.goto(100, 0)
+a.pendown()
+a.forward(200)
+a.penup()
+a.goto(100, -100)
+a.done()
+import turtle as b
+
+b.pensize(5)
+b.color('blue')
+b.circle(-30)
+b.penup()
+b.goto(60, 0)
+b.pendown()
+b.circle(-30)
+b.penup()
+b.goto(60, 60)
+b.pendown()
+b.circle(-30)
+b.penup()
+b.goto(0, 60)
+b.pendown()
+b.circle(-30)
+b.done()
+import turtle as c
+
+c.pensize(5)
+c.color('red')
+c.right(72)
+c.forward(200)
+c.right(144)
+c.forward(200)
+c.right(144)
+c.forward(200)
+c.right(144)
+c.forward(200)
+c.right(144)
+c.forward(200)
+c.done()
+",,,管理台,"2023-01-12 16:41:30	",总体格式可以，答案清晰，继续保持,,
+6,u_61a5c1c6b2e46_ngYk8WAXz8,任国强-,,任国强,"13992952461	","13992952461	",已提交,"2023-01-10 15:46:29	","import turtle as t
+
+t.color('blue')
+t.penup()
+t.goto(-100, 100)
+t.pendown()
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+
+t.penup()
+t.color('blue')
+t.goto(0, 0)
+t.pendown()
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+
+t.color('blue')
+t.penup()
+t.goto(0, -100)
+t.pendown()
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.color('blue')
+t.penup()
+t.goto(100,0)
+t.pendown()
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+
+t.done()[图片][图片][图片]","http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/d43be44172f3765502ee6d319c7e4247.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/e3749f3084e99740c3aa7d6a2ca16a2e.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/0ebb67c27a04c5189740b6c99dcc2ac5.png",,管理台,"2023-01-12 18:11:08	",程序尽量都截图！！,,
+7,u_61acd0f83e341_5aJJ0nv1Vm,田旗扬,,田旗扬,"18252674819	","18252674819	",已提交,"2023-01-09 18:30:27	",https://blog.csdn.net/xiaotian09257631/article/details/128526476?spm=1001.2014.3001.5501,,,管理台,"2023-01-12 16:41:59	",程序结构严谨，结果正确，加油！,,
+8,u_61a5bbc667dd4_l7TksZLAhu,高轩,,高轩,"14751786520	","14751786520	",已提交,"2023-01-09 12:00:53	",[图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/9701bef19bbd79c1b5e61cd1bf72fe42.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/4c05f533d697629402260de05a950295.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/6409167852fea07eaff627a1712b2236.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ea015fd0faaa941f81780a62c220b110.jpeg",,管理台,"2023-01-12 16:42:04	",程序结构严谨，结果正确，加油！,,
+9,u_61af1ead61a0d_fbGGsRJCia,王硕,,王硕,"19549532381	","19549532381	",已提交,"2023-01-04 16:16:20	",[图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/cf0fc3c3139119ee25eaee507384f7d7.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/aa24b41f3c905ba7fce64cfc150b3995.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c0cf2e43af6f16990ee8133e40cc223d.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/b7a6dffd663b57bc4bf86c1a84e844b2.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/55585895fc153aeb1b12549c2860f90b.jpeg",,管理台,"2023-01-07 16:54:19	","棒，继续加油
+",,
+10,u_61acb5536b174_i0jVbTwduo,陈冲,,陈冲,"13851322957	","13851322957	",已提交,"2023-01-03 18:45:58	",http://t.csdn.cn/k5vE5,,,管理台,"2023-01-12 17:55:30	","不错，使用博客书写，结构严谨，结果正确，继续保持
+",,
+11,u_61acc817379d6_CfPlArJbtS,周世君,,周世君,"18869251273	","18869251273	",已提交,"2023-01-03 18:20:23	",[图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/3a41756328c93cead82b48d1142636ac.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/acf887a4be473b072054e81fb91aae71.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/cf2910878ab1124b1f42dc12e52187d7.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/1ac0931ecd2e71cb84a726b9961dfa62.png",,管理台,"2023-01-12 18:11:35	","答案正确！
+
+",,
+12,u_61a5bb13b285e_VTlRUtnzSM,潘徽,,潘徽,"13995979585	","13995979585	",已提交,"2023-01-03 17:02:30	","1.   109  0x6d
+2.   5935.148
+3.   2.5
+4.   -1
+      False
+      1
+      False[图片][图片][图片][图片][图片]","http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/12b229eeb0c13baa9f683a62c4817f22.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/b918df923be3ea52d66e7c8f200bc3fb.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/0ca44a7c5db7ef985518849a4923a169.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/65f85a94c8439d0bf4acfaa800adeb7d.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/593447d56c2d2c02f5577d8754013fad.png",,管理台,"2023-01-07 16:55:05	","棒，继续加油
+
+",,
+13,u_61aed130927c2_hEgA87og0k,汪云帆,,汪云帆,"15995635125	","15995635125	",已提交,"2023-01-03 03:07:47	",[图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/95acb94f748875908f579e012f75f930.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/292546952becf23e4b468356f5a12e83.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/e19d6928c2e8ab54b3444c44f4c20cae.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/5ba6744408a6305516651b3f79a3251c.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/e90dc7d23f9cc8ddf2f78d5d416d533b.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/fbef82544af985b224af15361a508a61.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/e020960adaab3272b1cdd3f4737d889f.jpeg",,管理台,"2023-01-07 16:55:10	","棒，继续加油
+
+",,
+14,u_61adf90f75da1_saZ0anvQC8,寇书搏,,寇书搏,"13754984458	","13754984458	",已提交,"2023-01-02 23:26:44	",[图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/106a5099c9449bf087c6a5026f12a4b7.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/07fdd27a810a9ad7e884bbd1f55d6c37.jpeg",,管理台,"2023-01-07 16:55:16	","棒，继续加油
+
+",,
+15,u_62cd39265dca7_UqYW0YOjzU,Cherish,,张鹏鹏,"18691447514	","18691447514	",已提交,"2023-01-02 23:17:43	",http://t.csdn.cn/Gaclj,,,管理台,"2023-01-07 16:55:21	","棒，继续加油
+
+",,
+16,u_61accf2b60864_x6tXCfvbif,岉崏,,吴双,"16692670803	","16692670803	",已提交,"2023-01-02 23:13:46	",[图片][图片][图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/2d7d38fa3a2d4999b33526ebab15af5f.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/7482f1640fb9818392feda10354b231b.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/e7d4792c0900206d6e21d88539d045f8.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/011fa71fffec9eb99fd6546225ea4ca5.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/a8e14b57da7d6fe55ccfacab3d707a9d.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/f5b13188bb615266df5592a5ce88b66c.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/e7a3870d5f5d839dd1937da4e854a0d4.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/14662c72c1f131ca0454b34b181c458d.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/1a57658adb3c33608f9d8f89641343e5.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/2428dfc567586456b79e0f0c513774f1.png",,管理台,"2023-01-07 16:55:31	","完美！！！！！！！！
+",,
+17,u_61aca62b37204_pNoekzLieE,陈思伟,,陈思伟,"15358528536	","15358528536	",已提交,"2023-01-02 23:12:35	",[图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/69b430c19b9d1e010102341e558bbcdf.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/8ad6c3e8f84567d9e8c8491f485d6020.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/7d954faeade945e3d1012048cedd174f.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/cc1c214802af9d9eefdda164a70b2161.jpeg",,管理台,"2023-01-07 16:55:43	","完美！！！！！！！！
+
+",,
+18,u_61a5bbcc79599_ozPbTZ5CXT,封建乔,,封建乔,"13571106186	","13571106186	",已提交,"2023-01-02 23:11:01	",[图片][图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672672258_02637.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672672258_52049.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672672258_33264.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672672258_79442.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672672258_38296.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672672258_72904.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672672258_98041.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672672258_81696.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672672258_58367.png",,管理台,"2023-01-07 16:55:48	","完美！！！！！！！！
+
+",,
+19,u_636b846eb66e5_YHUuGW4DlW,梁总,,吴泽燊,"15112972759	",,已提交,"2023-01-02 23:01:09	",[图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ccb08528df92664a23a3d54ea857eec1.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/560c1cf60e421b45a0ec2bbca525be78.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/7f808f7261258bdbfa00a06c10971883.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/35f84e27c7630052a5bebe3405ad08c4.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/6ea6f60ef6f1c4c9da452bc0dece9794.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/3b1491eaee1872b6e8693c94542a282d.png",,管理台,"2023-01-07 16:55:53	","完美！！！！！！！！
+
+",,
+20,u_61af16395a635_ZHh2raWyPo,牟建超,,牟建超,"13664764686	","13664764686	",已提交,"2023-01-02 22:19:12	",[图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/45981bad39725137bc334c2c5172fb2a.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/bd342e6c1c43d344b824cb1aa8aa9fac.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c6308574809346155de4fbd9bf31973c.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/85247f48a1d2217bab7902e745d8c0a0.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/778c96fb46eb2fd82caea792217c9109.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/b10cfe9e668ea4ccb95ae8eecb6c73c9.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/53fc0659cf19423a57a400962fab612d.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/93b6ee0291d791e4e47d57c6b3f936e2.jpeg",,管理台,"2023-01-07 16:55:58	","完美！！！！！！！！
+
+",,
+21,u_6235a1ec3ec0d_728GdKUjTl,胡彤,,胡彤,"19984993628	","19984993628	",已提交,"2023-01-02 22:04:34	",http://t.csdn.cn/q2NUF,,,管理台,"2023-01-07 16:56:03	","完美！！！！！！！！
+
+",,
+22,u_61acd1653e36f_R7PUxHqThn,"何召洋? ?",,何召洋,"15996922852	","15996922852	",已提交,"2023-01-02 22:01:05	",[图片][图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/e1a5af1f1adf349eee32cc1d8744a2a5.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/9579773dc9d41d2e0393d1b611fb87dc.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/926133fe9f9872c3f11f7a79d23446e3.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/5d1a2cdec4fa2ee8eca2656c10b1077a.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/dcdbfe0277ece70f172b0e37139f32e8.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/2e0578ecca4561ebc92673b4c1effefd.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/a11a1f04ec664ea4776644e748a939aa.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/cf80e427056d4039caa1ff150842dc1c.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/4c3c35df7dc5f753b03cf4bb9cc45561.png",,管理台,"2023-01-07 16:56:08	","完美！！！！！！！！
+
+",,
+23,u_61af19bd58ad3_PbJo8pwBFa,胡嘉禾,,胡嘉禾,"18795505897	","18795505897	",已提交,"2023-01-02 21:46:59	",[图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/11c5ef3fc95f365f0506b3c2316e8088.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/b556e9c24c831a05a3a0886c7ee80e0d.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/7022c4358a8b22914d3798465b611725.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/9f5b37afc4e4ecccc6269dbe05a730d4.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/f274824965f67089af65b268cecd02fc.jpeg",,管理台,"2023-01-07 16:56:13	","完美！！！！！！！！
+
+",,
+24,u_61a816e5abe1e_5Viw4ZeLUI,王梓行,,王梓行,"18092851892	","18092851892	",已提交,"2023-01-02 21:09:06	",http://t.csdn.cn/LHRXx,,,管理台,"2023-01-07 16:56:18	","完美！！！！！！！！
+
+",,
+25,u_61ac9cca3b930_4BRROONzQy,周帅,,周帅,"19802573985	","19802573985	",已提交,"2023-01-02 20:15:53	",[图片],http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/9152dbaa37bd09d10a74fef399d93faa.jpeg,,管理台,"2023-01-07 16:56:39	","不错，继续加油
+",,
+26,u_61a5b99d67c27_D3pWzSEN1I,王壮壮,,王壮壮,"15686210981	","15353486134	",已提交,"2023-01-02 19:53:03	","
+[图片][图片][图片][图片][图片][图片][图片][图片][图片]","http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/6236771cb29426127e5ac0426a65a60b.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/039dc87f1b3d9db806cd8f10771abec1.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/0a20a474b98f760f77a5add0a5902b25.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/0a5e8bf59c4949ca6292dfb87a371ad6.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/8c04360847ab3726d25c789e6d8ece62.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/90b906955d239015a4dde65116139644.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/e1c6384353ff66cf43d75dfa6ea96b07.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ab2503d78916298f00765ce37be97539.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/bb29ed291840401d5595f35f936d721b.jpeg",,管理台,"2023-01-07 16:56:46	","不错，继续加油
+",,
+27,u_61add44795639_6UxHEMAAkx,??,,马圣炀,"18051859500	","18051859500	",已提交,"2023-01-02 19:47:53	",[图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/382c02715e3dc3e28a3a2c102a2c86ad.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/769de03988925574e818a2c9c42a9e6e.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/e86d185116bb29a6cf7ae66d43ed3dfe.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/6df4ae63fc20cd86e1d8c183a81532e2.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/fdf7f6f995a153126331d33eab2f6061.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/a68c9b2e05a8c2a98c697453c85bf97c.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/2aeedb02f6e340f312b0b8f4dd59c2c9.jpeg",,管理台,"2023-01-07 16:56:53	","不错，继续加油
+",,
+28,u_61ace7f92c685_UFs3JM6GKn,2021014606周以恒,,周以恒,"18012747939	","18012747939	",已提交,"2023-01-02 19:26:10	",[图片][图片][图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/3b48b2b48e15617574ff10278f112fc1.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/3d4276d8e02fde14e49a17ed4d9f94dc.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/df5df54c37d8b1944bb8ebabd12d179b.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/7f5b2d40099e35c90fe365c1c6b10f38.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/09fc5643611c97ae4bdb8f0ea930a397.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/296bd377036f5a0d851053214d322a31.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/b9fe1c8bc122acaf7e342d8dba8afc68.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/37d2abe8698349f2487cf02fb9cfa31b.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/1b29ea4fecf08c68e33a5847a8f3c479.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/17b5c43ebb4b8972fca2ba697e69bd28.png",,管理台,"2023-01-07 16:56:59	","不错，继续加油
+",,
+29,u_6173fd6c55a91_kVbuv83jC3,杨佳静,,杨佳静,"18191759064	","18191759064	",已提交,"2023-01-02 18:08:19	",[图片],http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/69b99f6ca9ed818e11a27bc7390517c0.jpeg,,管理台,"2023-01-07 16:57:05	","不错，继续加油
+",,
+30,u_62e7832a5a23f_sifw4qmUAf,赵倩,,赵倩,"17795948673	","17795948673	",已提交,"2023-01-02 18:07:58	",[图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/14379659c4fd082971750ab05fd80b24.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/79fd56183373ad37f47682647f39f7aa.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/36a2ec8f99175e65cf3f480683de05d7.jpeg",,管理台,"2023-01-07 16:57:10	","不错，继续加油
+",,
+31,u_5fb9ba12e0e98_ooQrc9Th6G,金嘉轩,,金嘉轩,"18105163196	","18105163196	",已提交,"2023-01-02 17:40:09	",[图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/3fa0b481dd852267a27c7cee72c16ae2.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/0d6532a1e2d9e55b992aa815c99bbe89.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/d08369d5b382bd6955172681b8ab4b25.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/0557a4f26b4e4dae7a6dd229e3394d43.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/97a6c78830a426040096bfd96e6a1485.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/dbefaef95de107158868138fa85068d8.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/5edeb33564a4cafae09283d7050971e1.jpeg",,管理台,"2023-01-07 16:57:15	","不错，继续加油
+",,
+32,u_61ade3da682fa_cbWjDMrOxw,金城金城武,,王宇轩,"15366080939	","15996290383	",已提交,"2023-01-02 17:38:17	",[图片][图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/822b4cf5e0b271217dc760d4d6502420.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/cb07018ae190819fb1cffae7c626a306.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/8c0036bae9d5ac0bdd1a57161e6e5b52.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/275ccb5bc36870e90b0ad0315ba9ac85.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/a94a2867d3ccdff88a3cb8e66d6d1554.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/7919adeae08f560456091f279d8eb86d.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c9ecf78723a5a4ac83a0cdafb790801a.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c1407090ca025f3fda2b5a97df377450.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/274e2e846015d8719d70695c57f58621.png",,管理台,"2023-01-07 16:57:20	","不错，继续加油
+",,
+33,u_6232be3073d89_6TzNGvwgu2,任佳兴,,任佳兴,"13759759049	","13759759049	",已提交,"2023-01-02 17:35:46	",[图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/30e22096da47969375fd182d19d92493.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/09a8fd229f74f5ce8aa7a919dbc6aad4.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/a898aa3eb2e27080c4813b5e8d756d71.png",,管理台,"2023-01-07 16:57:25	","不错，继续加油
+",,
+34,u_61add54a5d040_fos46IxMxn,李荣磊21南航金城学院,,李荣磊,"18068023845	","18068023845	",已提交,"2023-01-02 17:35:21	",[图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/74c888c72cd5a0ddb9eb4f930f66ac58.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/218adb52a77d757547285eaa61e8951f.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/6bca5a282eeead7145bd395b720ff5b1.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ef38d82953aa37a198377092b52c2e4f.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/fc5532abc98fe8a1d74c6a949d31c3a2.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/5b988f03ad09ffbee02244b69ec1b8f0.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/f69a7100dd24a7ea2d22f03cac8d9f96.jpeg",,管理台,"2023-01-07 16:57:29	","不错，继续加油
+",,
+35,u_638ef9f8601f5_45dYAiUkY6,张凯佳,,张凯佳,"13328966539	",,已提交,"2023-01-02 17:34:35	",[图片][图片],"http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672652072_68195.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672652073_15188.png",,管理台,"2023-01-07 16:57:34	","不错，继续加油
+",,
+36,u_61acb9c43d47e_baD4ckMPXC,刘志城,,刘志城,"13338605579	","13338605579	",已提交,"2023-01-02 17:28:48	",[图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/5efaff6afec6042f5887ed9690e10782.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c422f047e0d91cc27c77aca0dddce13f.png",,管理台,"2023-01-07 16:57:39	","不错，继续加油
+",,
+37,u_61aca1d55e44d_8SMUNrD3nM,朱星宇,,朱星宇,"15252201955	","15252201955	",已提交,"2023-01-02 17:16:38	","1、m，6D
+2、5935.148 5.9351476e+03
+5935.14760
+3、2.5
+4、3
+False
+1
+False
+5、a = int(input('请输入两位数'))
+b = int(input('请输入两位数'))
+print('组成新的四位数为：',b // 10 * 1000 + a % 10 * 100 + a // 10 * 10 + b % 10)
+
+6、a = int(input('请输入一个0到1000之间的整数'))
+if 0 <= a <= 1000:
+    print('整数中的各位数字求和为：' ,a // 100 + a % 100 // 10 + a % 10)
+else:
+    print('输入的数据不符合要求')
+
+7、a =float(input('请输入飞机的加速度a：'))
+v =float(input('请输入飞机的起飞速度v：'))
+length = v ** 2 / (2 * a)
+print('最短跑道长度：%1.3f' % length)
+
+1、m，6D
+2、5935.148 5.9351476e+03
+5935.14760
+3、2.5
+4、3
+False
+1
+False
+5、a = int(input('请输入两位数'))
+b = int(input('请输入两位数'))
+print('组成新的四位数为：',b // 10 * 1000 + a % 10 * 100 + a // 10 * 10 + b % 10)
+
+6、a = int(input('请输入一个0到1000之间的整数'))
+if 0 <= a <= 1000:
+    print('整数中的各位数字求和为：' ,a // 100 + a % 100 // 10 + a % 10)
+else:
+    print('输入的数据不符合要求')
+
+7、a =float(input('请输入飞机的加速度a：'))
+v =float(input('请输入飞机的起飞速度v：'))
+length = v ** 2 / (2 * a)
+print('最短跑道长度：%1.3f' % length)
+
+1、m，6D
+2、5935.148 5.9351476e+03
+5935.14760
+3、2.5
+4、3
+False
+1
+False
+5、a = int(input('请输入两位数'))
+b = int(input('请输入两位数'))
+print('组成新的四位数为：',b // 10 * 1000 + a % 10 * 100 + a // 10 * 10 + b % 10)
+
+6、a = int(input('请输入一个0到1000之间的整数'))
+if 0 <= a <= 1000:
+    print('整数中的各位数字求和为：' ,a // 100 + a % 100 // 10 + a % 10)
+else:
+    print('输入的数据不符合要求')
+
+7、a =float(input('请输入飞机的加速度a：'))
+v =float(input('请输入飞机的起飞速度v：'))
+length = v ** 2 / (2 * a)
+print('最短跑道长度：%1.3f' % length)
+
+8、import turtle as t
+t.pensize(10)
+t.color('green')
+t.right(72)
+t.forward(200)
+t.right(144)
+t.forward(200)
+t.right(144)
+t.forward(200)
+t.right(144)
+t.forward(200)
+t.right(144)
+t.forward(200)
+t.done()",,,管理台,"2023-01-07 16:57:52	","完美！
+",,
+38,u_61aef8394c317_KyYZELQa2y,孙小岚,,孙小岚,"13813541481	","13813541481	",已提交,"2023-01-02 17:16:00	",[图片][图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/a255ebc8f1e668be46b4bc087b898ba4.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/d84136fc649279588f1f9405e5e5dd94.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/3939fd16556814385179a32ca3ef9be2.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c9245288bae09046ed00395112272435.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/dd5efdad6433b14ade9afc381285515c.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/24a7c08367efa7935ecb6833348fe69e.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/35676a6e35f3d5306069b380ac7ad076.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/53fc0659cf19423a57a400962fab612d.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/3132ca81533b4500d6c9b5aa0c4a8912.png",,管理台,"2023-01-07 16:57:58	","完美！
+
+",,
+39,u_61ac9aae3b714_LgwB0RcwLL,沈超,,沈超,"17761711735	","17761711735	",已提交,"2023-01-02 17:13:34	","1、m，6D
+2、5935.148 5.9351476e+03
+5935.14760
+3、2.5
+4、3
+False
+1
+False
+5、a = int(input('请输入两位数'))
+b = int(input('请输入两位数'))
+print('组成新的四位数为：',b // 10 * 1000 + a % 10 * 100 + a // 10 * 10 + b % 10)
+
+6、a = int(input('请输入一个0到1000之间的整数'))
+if 0 <= a <= 1000:
+    print('整数中的各位数字求和为：' ,a // 100 + a % 100 // 10 + a % 10)
+else:
+    print('输入的数据不符合要求')
+
+7、a =float(input('请输入飞机的加速度a：'))
+v =float(input('请输入飞机的起飞速度v：'))
+length = v ** 2 / (2 * a)
+print('最短跑道长度：%1.3f' % length)
+
+1、m，6D
+2、5935.148 5.9351476e+03
+5935.14760
+3、2.5
+4、3
+False
+1
+False
+5、a = int(input('请输入两位数'))
+b = int(input('请输入两位数'))
+print('组成新的四位数为：',b // 10 * 1000 + a % 10 * 100 + a // 10 * 10 + b % 10)
+
+6、a = int(input('请输入一个0到1000之间的整数'))
+if 0 <= a <= 1000:
+    print('整数中的各位数字求和为：' ,a // 100 + a % 100 // 10 + a % 10)
+else:
+    print('输入的数据不符合要求')
+
+7、a =float(input('请输入飞机的加速度a：'))
+v =float(input('请输入飞机的起飞速度v：'))
+length = v ** 2 / (2 * a)
+print('最短跑道长度：%1.3f' % length)
+
+1、m，6D
+2、5935.148 5.9351476e+03
+5935.14760
+3、2.5
+4、3
+False
+1
+False
+5、a = int(input('请输入两位数'))
+b = int(input('请输入两位数'))
+print('组成新的四位数为：',b // 10 * 1000 + a % 10 * 100 + a // 10 * 10 + b % 10)
+
+6、a = int(input('请输入一个0到1000之间的整数'))
+if 0 <= a <= 1000:
+    print('整数中的各位数字求和为：' ,a // 100 + a % 100 // 10 + a % 10)
+else:
+    print('输入的数据不符合要求')
+
+7、a =float(input('请输入飞机的加速度a：'))
+v =float(input('请输入飞机的起飞速度v：'))
+length = v ** 2 / (2 * a)
+print('最短跑道长度：%1.3f' % length)",,,管理台,"2023-01-07 16:58:04	","完美！
+
+",,
+40,u_61a5bb95b2a17_R5HVjKUHYu,王嘉正,,王嘉正,"18091969715	","18091969715	",已提交,"2023-01-02 17:11:27	","程序在博客中
+http://t.csdn.cn/mzKop
+1、m   60
+2、5935.148	5.935148e+03
+   5935.14760
+3、2.5
+4、3
+   False
+   1
+   False[图片][图片]","http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/682b1af69f46f231535d1d179da2fcae.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/1afde9abdf0ef98fcfc6ad3a8b36cb2f.png",,管理台,"2023-01-07 16:58:09	","完美！
+
+",,
+41,u_62920d873d7b6_jZSCTyOqqS,赵祺康,,赵祺康,"13426781068	",,已提交,"2023-01-02 17:10:08	",[图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/9ad44100d5e53774cbecf8aebc49dd7c.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/2e0b261a19369c00cb668cc0e4639bb3.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/190ad31ad49fa20cf1d9f4c869e9f8f6.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/68a8f4d1de26360a86a31861c1bb4317.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/d5fd64e55a61e340909f8f67c61fa7b6.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c1aac5f148d95f56d1592f0c0a2c4465.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/1b0baaf5f4e39ccc1bd9655f77ef6113.png",,管理台,"2023-01-07 16:58:14	","完美！
+
+",,
+42,u_6291ec753b949_tkx5W48wvH,黄金山,,黄金山,"19129270586	","19129270586	",已提交,"2023-01-02 17:07:21	",[图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/2173140033360b9a0ba574558fc8cd4b.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c9d7e53d284e58a837395529054aadf6.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/da30aeb07e50a4cb33cf6e88e5101bff.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/6a29da79b2f81a32d6f261a5adf128f2.png",,管理台,"2023-01-07 16:58:19	","完美！
+
+",,
+43,u_61aca45135c0f_UXSylkfO1b,倪松扬,,倪松扬,"15949163033	","15949163033	",已提交,"2023-01-02 17:04:08	",[图片],http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/8bddab3341b44aadab961da1e2116cba.jpeg,,管理台,"2023-01-07 16:58:24	","完美！
+
+",,
+44,u_61acaa1b3c38e_fMn57sO4pn,罗枭,,罗枭,"13885337862	","13885337862	",已提交,"2023-01-02 16:49:55	",http://t.csdn.cn/CIjB1,,,管理台,"2023-01-07 16:58:29	","完美！
+
+",,
+45,u_61af0eecec537_BvaKKjk9WF,汪洋,,汪洋,"18013862902	","18013862902	",已提交,"2023-01-02 16:49:23	",[图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/988419f0fcf83dd69534daeed03efe6a.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/21a8bc6d035eb2d7565c6ed5df048ed1.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/43fa6a7feb79086d1ce0ee5e2caacc03.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/44c83b0b9d127dc8760787d9126e7891.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/4c77e22337ce63572d03303151aa1d24.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/2484ca7ba55712291ad828412c1d286d.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/708f6bfa7917c0679c9bc0b9fe5e978e.jpeg",,管理台,"2023-01-07 16:58:33	","完美！
+
+",,
+46,u_61866ca768673_HhAQfoJ8MB,陈浩,,陈浩,"18066762560	","18066762560	",已提交,"2023-01-02 16:35:02	",[图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/4adb50aa0ccd699943c8b54e1e36bd3f.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ab1ad7ee0175de51ae092f3842f611cd.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ece06d566909f7dad0aa0c749d2d7b32.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/cce87a57e00bb68a89635e5a44a520cc.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/4ca441419c16b81866931c0eef9c4f2c.png",,管理台,"2023-01-07 16:58:38	","完美！
+
+",,
+47,u_61a5bc67b22e0_Opj3fNJ0bx,李雨鑫,,李雨鑫,"15667232167	","15667232167	",已提交,"2023-01-02 16:28:49	",https://kdocs.cn/l/cimJTS53uq2C,,,管理台,"2023-01-07 16:58:43	","完美！
+
+",,
+48,u_628b4367dfd2a_CuYcbCq2v1,E?????.,,王奥,"17791476027	","17791476027	",已提交,"2023-01-02 16:22:43	",https://blog.csdn.net/w17791476027/article/details/128520955,,,管理台,"2023-01-07 17:19:41	","很棒，发到博客上！！！！
+",,
+49,u_5fc1097b44ec3_vtkSmAuTKI,杨昱杰,,杨昱杰,"15099257707	","15099257707	",已提交,"2023-01-02 15:50:41	",[图片][图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/45ef34772343448400b2c62e1e8cae32.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/41c4bc080880fa5ece3794dc4c77352b.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/76b041bd390a61e35eda6b3e3ddae62c.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/8846c6946aa7693ba620e3a594d8336d.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/0e399d7e3e345845abc7db24deae034e.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/1ee40ab90af2bf397b0fff7582fe6e9c.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/7a3af5d42426991a2ec86ef241095298.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/f3923c0f341608d77783806263e688d9.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/8a4b4afb090524caded7afa3d7ac3c73.png",,管理台,"2023-01-07 17:19:51	","继续加油
+",,
+50,u_6290df2c74070_nTw0Mi9fJN,严思敏,,严思敏,"15591920912	","15591920912	",已提交,"2023-01-02 15:42:58	","5,
+x, y = int(input(""输入任意数字："")), int(input(""请输入任意数字:""))
+c = x // 10 *1000 + y // 10 * 100 + x // 10 * 10 + y % 10
+print(""生产全新数字："", c)
+6,
+a = int(input(""输入任意数字：""))
+if a > 10000:
+    print(""数字过大，请重新输入"")
+else:
+    b = a // 1000
+    c = a // 100 % 10
+    d = a // 10 % 10
+    e = a % 10
+    i = b + c + d + e
+    print(""四位数只和是："", i)
+8,
+import turtle
+
+turtle.pensize(5)  # 画笔宽度为5
+turtle.color(""red"")  # 画笔颜色为红色
+turtle.goto(0, 0)  # 落笔坐标为0.0
+turtle.right(0)  # 落笔的角度是0度
+turtle.forward(60)  # d第一笔画线长度为60
+turtle.right(90)
+turtle.forward(60)
+turtle.right(90)  # 第二笔转向为90度
+turtle.forward(60)
+turtle.right(90)  # 第三笔转向90度
+turtle.forward(60)
+turtle.penup()
+turtle.goto(60,0)
+turtle.pendown()
+turtle.right(90)  # 落笔的角度是90度
+turtle.forward(60)  # d第一笔画线长度为60
+turtle.right(90)
+turtle.forward(60)
+turtle.right(90)  # 第二笔转向为90度
+turtle.forward(60)
+turtle.right(90)  # 第三笔转向9度
+turtle.forward(60)
+turtle.penup()
+turtle.goto(60,60)
+turtle.pendown()
+turtle.right(90)  # 落笔的角度是90度
+turtle.forward(60)  # d第一笔画线长度为60
+turtle.right(90)
+turtle.forward(60)
+turtle.right(90)  # 第二笔转向为90度
+turtle.forward(60)
+turtle.right(90)  # 第三笔转向90度
+turtle.forward(60)
+turtle.penup()
+turtle.goto(0,60)
+turtle.pendown()
+turtle.right(90)  # 落笔的角度是90度
+turtle.forward(60)  # d第一笔画线长度为60
+turtle.right(90)
+turtle.forward(60)
+turtle.right(90)  # 第二笔转向为90度
+turtle.forward(60)
+turtle.right(90)  # 第三笔转向90度
+turtle.forward(60)
+
+turtle.done
+9,
+import turtle as t
+t.pensize(2)
+t.penup()
+t.goto(0,0)
+t.pendown()
+t.circle(50)
+
+t.penup()
+t.goto(0,100)
+t.pendown()
+t.circle(50)
+
+t.penup()
+t.goto(100,100)
+t.pendown()
+t.circle(50)
+
+t.penup()
+t.goto(100,0)
+t.pendown()
+t.circle(50)
+t.done
+10,
+import turtle as t
+t.pensize(5)
+t.right(60)
+t.forward(200)
+t.right(150)
+t.forward(200)
+t.right(150)
+t.forward(200)
+t.right(150)
+t.forward(200)
+t.right(150)
+t.forward(200)
+t.done
+
+[图片][图片][图片][图片]","http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/067a604d2ed0c331ef46999a6d979a73.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/e5c1ea72fe549c5f014c167c2d8a2362.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/eccfd51cae41bcbd3aa9c883b2244c62.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/4fe70edaebe797b2d3d9938118fcacf5.png",,管理台,"2023-01-07 17:19:58	","继续加油
+
+",,
+51,u_61ad5c5239404_ICzwHWQpAo,王楠予,,王楠予,"15262976206	","15262976206	",已提交,"2023-01-02 15:40:32	",[图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/46aec1446fae8821521b18e247922a72.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/6791b667373fa9b4770ebadeb271012f.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/adb128845351fe79f47e9d4095c5c38f.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/5fb1a1ad963ba12438d560aafe932caa.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/4dd02e41b42f31da6f56a39371338b13.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/2b776396061438b608174935da4f317e.png",,管理台,"2023-01-07 17:20:04	","继续加油
+
+",,
+52,u_61af1da14e0e7_snahibXSTA,爱吃西瓜的橙子?,,顾程程,"15152873285	","15152873285	",已提交,"2023-01-02 15:39:58	",[图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/e7080473acf2d094084d9b52a4a6fa8f.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/47d2385786b80264e0bad58b75211387.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ae08d0ff9ce05d6eab866a26940a4927.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/d1c11c5c368cab9bb8d8ea6d5ffe0b69.png",,管理台,"2023-01-07 17:20:10	","继续加油
+
+",,
+53,u_61ade41e8a740_bkBG63ZHfF,失眠大侠,,王雨晨,"18021403209	","18021403209	",已提交,"2023-01-02 15:29:08	","1、m 6D
+2、5935.148	5.935148e+03
+  5935.14760
+3、2.5
+4、3
+False
+1
+False[图片][图片][图片][图片][图片][图片][图片]","http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/a223845acf925d9988154c91ee9db5c9.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/c13a8ccb9bb076abc36037c34b71143c.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/3e8913fe93dec30338edb27dac4143cd.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/6747bceb30ed5c10841e6faccb8f12a3.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/9285142b6fb5ead1f0b4a796536cad5a.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/df12b0db489ac114c968eace5518c683.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/b8056c14369476a34c6b0f13c04a6fea.png",,管理台,"2023-01-07 17:20:18	","继续加油
+
+",,
+54,u_634cdae2ba6a3_zWta5wfrD3,高帅云.,,高帅云,"19047141047	",,已提交,"2023-01-02 15:13:16	","第一题
+m 6D
+第三题
+2.5[图片][图片][图片][图片][图片][图片][图片][图片][图片]","http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/7d8c2788ff53b97cd8d41e5ff177f3c6.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/15569cd3364a90456f749da1207b0221.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/24db373fd8809d1d4806244a4a987bbf.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/8da07dfd34173094f30040d50effeb9d.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c53714791a4af9b98155cb83f2069e42.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/8c7b457bc44f5012fad405cae1f095a7.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c99b21213016b9877b718f7f7768e07d.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c3cf35268cf59706561c1355605d0dd6.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/75a741ecf98a136f143ff429e8c3c2a0.png",,管理台,"2023-01-07 17:20:23	","继续加油
+
+",,
+55,u_61acb6eb36d49_vPk0O5X5gF,长安,,白境泽,"18335060600	","18335060600	",已提交,"2023-01-02 15:11:58	","十个作业，最后一张
+1
+
+import turtle
+
+2
+
+turtle.color(""red"")
+
+3
+
+turtle. penupl)
+
+4
+
+turtle.goto(-50,0)
+
+5
+
+turtle. pendown()
+
+turtle.circle(50)
+
+7
+
+turtle. penup()
+
+8
+
+turtle.goto(50,0)
+
+9
+
+turtle . pendown()
+
+10
+
+turtle.color(""green"")
+
+11
+
+turtle.circle(50)
+
+12
+
+turtle. penup()
+
+13
+
+turtle.goto(-50, -100)
+
+14
+
+turtle. pendown()
+
+15
+
+turtle.color(""blue"")
+
+16
+
+turtle.circle(50)
+
+17
+
+turtle. penup()
+
+18
+
+turtle.goto(50,-100)
+
+19
+
+turtle. pendown()
+
+20
+
+turtle. color(""yellow"")
+
+21
+
+turtle.circle(50)
+
+22
+
+turtle. done()
+
+23[图片][图片][图片][图片][图片][图片][图片][图片][图片]","http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/942522c76ce4b9ef37971e56a5e3e671.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/70958aca3c099c1d2b3d3fab469d79d5.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/00cf17beeb956d8eb8710d14792b3d88.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/41716785c194ae16e4dbb24f442b26e2.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/5dc1c80d43d9d0451815f79bcda700f3.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/9033b5c209edaa451d9f1b6f63fd4fcd.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/a160e87ccfafbeb51552f1da7d053295.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/59068af32c33fc9345efb9662792391d.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/2493c6d77d377e715c5df4eafcb959e0.png",,管理台,"2023-01-07 17:38:23	","不错的！！
+",,
+56,u_61ac9db53b6f6_CKE2w3rMOU,石剑雄,,石剑雄,"18112907312	","18112907312	",已提交,"2023-01-02 14:49:41	",[图片],http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/d9d31da31535acb66d3c3fe9abca4b52.png,,管理台,"2023-01-07 17:38:28	","不错的！！
+
+",,
+57,u_6291f24f3bcec_iJ4FPQKwG9,陈健彬,,陈健彬,"13060972383	","13060972383	",已提交,"2023-01-02 14:32:01	",[图片][图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/0bac87bf495b560ef10829d291cc99eb.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/0727701c22d72f3c4b387320281df1d8.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/2963e68f1d1b93913e756660e6236731.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/2ae32b97b630420b966f15fc04101af0.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ec513093a3366d49361e9ac69ea3bee0.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/0534cdad9f414dfad24a4b36e0372e71.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/4e6c87e7e22b8306c3905d85413b867c.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/36730b83e1a230225b3e9c27d039c37d.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/032fa46db1def461528b70cddb7967bc.png",,管理台,"2023-01-07 17:38:32	","不错的！！
+
+",,
+58,u_61a5d7c4b4280_6XqAlyFzga,宋怡欣,,宋怡欣,,"18220739936	",已提交,"2023-01-02 14:29:41	",[图片][图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/34a5dea192878bb3f37b575bb79f7a7c.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/8a59c4c61a16061a1918f963982db9fd.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/bd3dae55820f6b05c3c8a56c0ede7616.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/f374d076a27c75414b278f9ad924dbe5.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/a956868153a7989ff5c185a5c9984ed8.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/0f1a6242d478f8c83c08d4f70a061ccd.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/dab88154a229a13b8f0acac575777ed9.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/fc50c135e5f31da6fd0f393062493009.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/8b0f4985c715bdb4e0cccfebb0f9211d.png",,管理台,"2023-01-07 17:38:37	","不错的！！
+
+",,
+59,u_6138a3bffb1c4_r6vyptkEVH,不急,,欧乔,"15332659693	","15332659693	",已提交,"2023-01-02 14:27:57	",http://t.csdn.cn/RSTXD,,,管理台,"2023-01-07 17:38:44	","不错的！！
+
+",,
+60,u_63731f0242a1e_tnWO2M6QiL,刘茹,,刘茹,"13488403406	","13488403406	",已提交,"2023-01-02 14:18:36	",[图片][图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/3b34ac2f480b8ac253aaf2abcda1f783.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/62ed9ed9168c10990bd69bd21904b94a.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/f9a8f53224f375b197b9751edd39148b.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/7b1e95ae340f380f1f520528a4042f66.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/4aab9c9e4f649b623ecc61af9768f540.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/b8887352a20acd2ca1a31c25b6838060.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/3f9a049d91a686dc423621dbb48f1f9b.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/e544e01d04a611840f4cba575646e3d2.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ac9f11857f2a9a869ab6d14973ea4214.png",,管理台,"2023-01-07 17:38:49	","不错的！！
+
+",,
+61,u_638b213c5ea01_keNMrBRu7O,方杰,,方杰,"19829806213	","19829806213	",已提交,"2023-01-02 14:13:03	",http://t.csdn.cn/i6dzY,,,管理台,"2023-01-07 17:38:54	","不错的！！
+
+",,
+62,u_61a5bf566810a_NcdbiDH26U,强骁,,强骁,"13909115844	","13909115844	",已提交,"2023-01-02 14:10:32	",[图片][图片][图片][图片][图片][图片],"http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672639771_62693.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672639771_64685.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672639771_58020.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672639775_49329.jpg | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672639785_70468.jpg | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672639789_35949.png",,管理台,"2023-01-07 17:38:59	","不错的！！
+
+",,
+63,u_62881304d467f_Ne5W6yb5LG,不曜摆烂.,,陈健,"18700432656	","18700432656	",已提交,"2023-01-02 14:07:59	",[图片][图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/78decdb9a659dce119a856fe89093263.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/5b0737b935f81bde048b96d9bd98edd2.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/05d42ecb62f02c95c14d40c2165e428d.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/16c3243188d37efc2e28ee6a97f4f241.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/8ab5cb22fd41b80da31d67d2801f8cb8.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/96f3e8706571602b5d5c263698825a79.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/635ed98eed72930afdcd5714f4c35d98.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/4583a4ae8caf0ce75232ff1937d25a20.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/fbf0749a523be53191cbf0348bfc8220.png",,管理台,"2023-01-07 17:39:04	","不错的！！
+
+",,
+64,u_627d2732699f6_qTb3sKEuB1,李宇桐,,"李宇桐 ","15220537641	",,已提交,"2023-01-02 14:02:13	",[图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/608567c5cd0c1f872a653b854975a03d.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/f56355ce6dc21378d21b821a4cfe39f9.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/af3fa521c1a49d9042e87f7c79e50aac.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/4eb5d812903f7a8bc9a485a300f6fde5.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ed40d96b41cba2fb751975403dbd5091.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/2fe9ef65ca08341b343585ddad090e7f.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/f2e0822ba7ceaa60257e4738cc0d4a90.png",,管理台,"2023-01-07 17:39:10	","不错的！！
+
+",,
+65,u_6306e49a3b006_6kzW7LGbb1,张雨婷,,张雨婷,"13862870672	",,已提交,"2023-01-02 13:57:18	",[图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/45d8ab287f719ecae3c0a138b848b423.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/e8afd2e6538aa5c8d7d58751ff57e02c.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c7ee6586d1b694b215c8ee0a94f5b45f.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/0bfef8ba791de9994b1b2e29c3ed4450.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/d8779ffce56ed1ec056c6b4354196af9.png",,管理台,"2023-01-07 17:39:14	","不错的！！
+
+",,
+66,u_606056fb2f549_Zl0I4WIxti,胡春朵,,胡春朵,"13032904014	","13032904014	",已提交,"2023-01-02 13:47:05	",[图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/de509fceb8ff25c26d275b7d266e58d3.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/2903fa5bec38a242a334ee159b6183ed.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/5dbdcd2036947e112dd26276852a39ec.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/3d8968016ce1d6595e5ed42d99555c81.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/4c0a45cbca23a09cfad5b33285cfa943.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/368bbe117ac2cca136ac08f3ad6f16dd.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/2d4a6798ea565112a1c097f536978490.png",,管理台,"2023-01-07 17:39:19	","不错的！！
+
+",,
+67,u_61a5bdebaf766_ZdFe9V4OgL,胡天翔,,胡天翔,"17795144618	","17795144618	",已提交,"2023-01-02 13:46:38	",[图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/4d3758b235677f36e7b655bd635ec6b7.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/02bf3ce08b79c06f6846d7e3f9586aee.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/5da56082d9451d754ebf50fdfa9269b9.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/676c232b0654f6f5266bbad195ef8a6b.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/a9ef1da12d59e2d4376187e7db8506e6.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/548ff38cb6e45f434b7793e9a2d7fb43.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/b7c0811cc40db09888047e4364eed9a8.png",,管理台,"2023-01-07 17:39:24	","不错的！！
+
+",,
+68,u_61aca47037046_ijnPxydhCE,MysweeT,,董祥,"15995176084	","15995176084	",已提交,"2023-01-02 13:42:24	",[图片][图片][图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/01793b5c38e733dbd55c0750ebf339cc.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/f0d42329e39fde0908b984a8fe14b905.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/87c678762c1c031f41b0b6f989dc68ee.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/9f6ae09f82909b55c8d06b84e4fe63f3.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/dc205e7e3ec8dd605bf364ad12110409.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/46fca0b3ff728d5131b593c19d37cccd.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/b1c803b8d7abeca7ec61624dd5d01ba1.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/b59fa1da65bf4706d069c9a08ca6aee0.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/78f317a3a24203de310c34f8a981ef7a.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c3826b06e81c9fb80dbe30e0c7634ce9.jpeg",,管理台,"2023-01-07 17:39:50	","最好截图一下，答案完美！
+",,
+69,u_61a5bdf1af76b_c3nUK8bnly,张雄,,张雄,"15808603509	","15808603509	",已提交,"2023-01-02 12:56:51	","老师截图放不完，第一题没放上
+写在这
+
+1、m,6D[图片][图片][图片][图片][图片][图片][图片][图片][图片]","http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672635317_37502.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672635317_36156.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672635317_98754.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672635317_15598.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672635317_64679.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672635317_01668.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672635317_22599.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672635317_58198.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672635317_65744.png",,管理台,"2023-01-07 17:39:59	","继续加油
+",,
+70,u_61aa68da24c17_CwEr4Gz4lR,马昊田,,马昊田,"15891279856	","15891279856	",已提交,"2023-01-02 12:44:33	","【金山文档】 python第一次作业(1)
+https://kdocs.cn/l/cimJTS53uq2C",,,管理台,"2023-01-07 17:40:04	","继续加油
+
+",,
+71,u_61acd6ad82f60_HKuGukIn5N,祝玉婷,,祝玉婷,"18206228692	","19951198303	",已提交,"2023-01-02 12:35:27	",[图片][图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ec1ae7a6532d16075ab85cd04c73dc47.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/cd918ef6fcb6e575d12d8be3a1880964.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/4061b3868ae95cf08f5e003b89c84d8a.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c3ed806113a21613ecd295fd0467c2c0.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/6ee9ee0b1ae997084fd1c06f1a974e34.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/1ba618a02677937ebe39882072fb04ea.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/355f5531e61a939884c31958d682a1e0.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/0d7aa249736b2c35d142fb05d7423125.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/4077cc2695a4d1951c806182047db488.png",,管理台,"2023-01-07 17:40:10	","继续加油
+
+",,
+72,u_61a5bb3194725_44UNSB9YBw,汪静飞,,汪静飞,"15389535056	","15389535056	",已提交,"2023-01-02 12:27:48	",[图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ad3de3ec2ca8983b01232d3e7ac114ed.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c9a385bc4e4e43cbf5c29b9634219658.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c3f8db8a7a6601211bd00c77888f7145.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/769c35269fb173a2fb5f87623b1b1460.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/6f43584740e84a3478d51c58a11a9b44.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/015672527c0a7d92c04755f0c47b1c4a.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c2c0ad8338783f1c6d216be8bb2688d4.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/71497e67334b7bb5411063b9881678bf.jpeg",,管理台,"2023-01-07 17:40:15	","继续加油
+
+",,
+73,u_638080fe21fbf_oXhlwgvPF2,尹嘉润,,尹嘉润,"13571752230	","13571752230	",已提交,"2023-01-02 12:24:14	",[图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/7cd53d4c1ac6ed6c81f052369d1fe307.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c14ba0ee6b94f49e626691fd54992368.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/eb681de770ddc007e9e9135c9f9704e4.png",,管理台,"2023-01-07 17:40:20	","继续加油
+
+",,
+74,u_61ad5e7d3a863_wHDK53OWqs," 李蕊",,李蕊,"18013826597	","18869800149	",已提交,"2023-01-02 12:17:10	",[图片][图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/61f8394539dffc76002d7db176375911.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/a45646f43a90cf2ba6de0afb70af46b0.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/52f6ed7c2494d9959460ad5e12478ad7.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/63af646ee3a12d623840ec2eb11cacbd.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/e17de11ecc838cf287fedcbe429cd09b.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/b871db7127b83c5749efe546de378ac5.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/501ca72fec790dc3a94ca80889652a65.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/54c500fc7b8337f5bea51f95b8ea6207.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/1db2f6bffba4368068b438fcc5caa1cb.jpeg",,管理台,"2023-01-07 17:40:25	","继续加油
+
+",,
+75,u_61a5bb9090257_hr9yDWCat3,郑安和,,郑安和,"19829154929	","19829154929	",已提交,"2023-01-02 12:13:17	",[图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/5785376933e9d6404b4b87b17733153a.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/e60768be3e9d169c043c1e6dc789e10a.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/052c9913272d508c96caba1f24a26362.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/6d39aa79198e4fab617a0f251669905f.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/60e40d99db00d596b2e7b013b474bfba.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/6acb147dcbdfd919aca3140cff02289e.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/de221a78fc8e6318d7c354adab8148f9.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/7cc0b25ab638d9f2d48bc919bf32d592.png",,管理台,"2023-01-07 17:40:30	","继续加油
+
+",,
+76,u_61aca7fc35d79_pZ0DsghFB8,王铭文,,王铭文,"15366045830	","15366045830	",已提交,"2023-01-02 12:12:44	",[图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/1b7d8acf379fb2d55b72aed360350df9.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/85ae1e5615e54a5d3e3904cf14a6f294.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/09997032ae5aa62fcb71d04680cf5f40.png",,管理台,"2023-01-07 17:40:35	","继续加油
+
+",,
+77,u_62d3ca8662c2f_v7SZ9egHia,刘健,,刘健,"18291789297	","18291789297	",已提交,"2023-01-02 11:34:27	",[图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ada1720d034ff7b1a6f2c8bf9642955f.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/083f99bd6394bf050efa22d65e0a6c17.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/f43d2260dac76fb0943decfc022b10fa.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/4c9457332054b425f5c3baa5d98fead8.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/2a8ec907956e8d4d4169763cde8ec562.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/335c5f4600a31aeaae41ecabbedd502b.png",,管理台,"2023-01-07 17:40:40	","继续加油
+
+",,
+78,u_61aca08a53ddc_JMykFDTdrv,周越飞,,周越飞,"17799452855	","17799452855	",已提交,"2023-01-02 11:27:10	",[图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/fd766e098d9e8771f2724db8ee6d0e52.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/af5697e0c2f0aebd3d4d1dafc283df01.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/1a1787dda093496585a1fed560bb6841.png",,管理台,"2023-01-07 17:40:44	","继续加油
+
+",,
+79,u_61aca5bf3bf4d_Bucss3MIJk,卓钇丞,,卓钇丞,"16651366843	","16651366843	",已提交,"2023-01-02 11:19:27	",[图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ec9272b438df3c7779a807a3b5ee4d91.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/183cea8ff7095a26562ccf9c839ba126.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/e89d4e64b34d24a29eff28aeccc046b8.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/e67a39f436c635498955aeba7c2eb2f3.jpeg",,管理台,"2023-01-07 17:40:49	","继续加油
+
+",,
+80,u_6278800478bc7_oPuipPnVWF,刘俊,,刘俊,"18392745734	","18392745734	",已提交,"2023-01-02 11:15:46	",[图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/7ae35f7b3c6fda2ee128f09a7c6894dc.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/2fe0aca97de577e5336ee3bf904cce73.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/02f52c0f4b9c0724eecdfc73a2634dc4.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/84c74b94ce09eae230e0008521c06b37.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/0aad18ea586aaf44a679d74e753290a0.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/8c82670f385f5382971e9abed93c8451.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/fc5cb1b4b0682d94a9378988b219951d.jpeg",,管理台,"2023-01-07 17:40:54	","继续加油
+
+",,
+81,u_61a5bcd1af66e_ikWluZquC7,李轩,,李轩,"17868588994	","17868588994	",已提交,"2023-01-02 10:51:15	",[图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/4c4601cebfcffe203d01675aadf33e9e.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/3f74e62e38c10c376945e13f382b260c.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/846dd0d0065db985d77d7d1067a37f0a.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/5cd1f0730a9836a3395aa92acfea7a2f.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/f50f54e74dbfede520f4c3b9fc37a2b2.jpeg",,管理台,"2023-01-07 17:40:58	","继续加油
+
+",,
+82,u_61aca446359cf_Co6F6lK1Us,喻洁,,喻洁,"18115882129	","18115882129	",已提交,"2023-01-02 10:44:10	",[图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/549b8ae1035bc207a505fcffea99fb70.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ef03aec9527a1573f94e9dd02df496d0.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/023071af133643f9ac138e118571974c.png",,管理台,"2023-01-07 17:41:03	","继续加油
+
+",,
+83,u_634620305d26e_eIDZrpxhKQ,李天屹,,李天屹,"15939551232	",,已提交,"2023-01-02 10:33:07	",[图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672626754_37793.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672626760_09726.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672626765_91126.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672626768_25670.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672626775_62279.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672626779_59732.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672626782_22455.png",,管理台,"2023-01-07 17:41:11	","继续加油
+
+",,
+84,u_6235c81f7d244_G0YZHk1thU,屠宇辰,,屠宇辰,"15529292073	","15529292073	",已提交,"2023-01-02 10:25:42	",[图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/9c8be8d692c76674c93723cfb70a9ed2.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/75ce39351465c2e782ff966b68fc9b08.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ad5f77eb6699a2e45420283e53b5f297.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/12dd5e7243e7f5c6e66442cd2edc0664.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c63071882d376d2ef6e7c03cc332b1c8.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/5b0f4f5a983c3560d2abc9d8e0ab4b34.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/a878e9c663c57495c242b548f1d3e5ed.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/d511174cd16e3248f2f9087d541d328f.png",,管理台,"2023-01-07 17:41:17	","继续加油
+
+",,
+85,u_61aca9142a347_bnpoww8goy,朱俊豪,,朱俊豪,"18751976307	","18751976307	",已提交,"2023-01-02 10:16:29	",[图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/4edd7e47ff8d2e323816343d2073a517.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/87eb6026a00b78558f5c476b71cf8f2a.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/75995eccd6caab64d3904cede852472e.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/71eff46f56a6873232e7848ebb564aaf.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/6cf12c4c05d41d196adbe4822f750cbe.jpeg",,管理台,"2023-01-07 17:42:28	","继续加油
+
+",,
+86,u_5fc0ee54d210f_QEBOU6TBES,陈勇杰,,陈勇杰,"18228145981	","18228145981	",已提交,"2023-01-02 09:00:55	",[图片],http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/0de10cd3a275e2e603e52d604dc58689.jpeg,,管理台,"2023-01-07 17:42:33	","继续加油
+
+",,
+87,u_61af18b83d6f0_GyYn9lZdgW,李彦臻,,李彦臻,"18013290580	","18013290580	",已提交,"2023-01-02 08:22:02	","1.
+m 6D
+ 
+2.
+5935.148 5.935148e+03
+ 5935.14760
+ 
+3.
+2.5
+ 
+4.
+3
+False
+1
+False
+ 
+5.
+x = int(input('请输入第一个两位数'))
+y = int(input('请输入第二个两位数'))
+z = y // 10 * 1000 + x % 10 * 100 + x // 10 * 10 + y % 10
+print('z的值为：', z)
+ 
+6.
+a = int(input('请输入一个0到1000之间的整数'))
+if a >= 1000 or a <= 0:
+   print('您输入的数字不在范围内')
+else:
+   b = a % 1000 // 100 + a % 100 // 10 + a % 10
+   print('它的各位数字之和为：', b)
+ 
+7.
+a = int(input('请输入加速度:'))
+v = int(input('请输入起飞速度:'))
+length = (v ** 2) / (2 * a)
+print('最短的跑道距离为', length, '米')
+ 
+8.
+import turtle as t
+
+t.pensize(3)
+t.penup()
+t.goto(-200, 200)
+t.pendown()
+t.forward(400)
+t.right(90)
+t.forward(400)
+t.right(90)
+t.forward(400)
+t.right(90)
+t.forward(400)
+t.penup()
+t.goto(0, -200)
+t.pendown()
+t.forward(400)
+t.right(90)
+t.penup()
+t.goto(-200, 0)
+t.pendown()
+t.forward(400)
+t.done
+ 
+9.
+import turtle as t
+
+t.pensize(3)
+t.penup()
+t.goto(-100, 0)
+t.pendown()
+t.circle(100)
+t.right(180)
+t.circle(100)
+t.penup()
+t.goto(100, 0)
+t.pendown()
+t.circle(100)
+t.right(180)
+t.circle(100)
+t.done
+ 
+10.
+import turtle as t
+
+t.pensize(3)
+t.penup()
+t.goto(0, 150)
+t.pendown()
+t.right(72)
+t.forward(300)
+t.right(144)
+t.forward(300)
+t.right(144)
+t.forward(300)
+t.right(144)
+t.forward(300)
+t.right(144)
+t.forward(300)
+t.done",,,管理台,"2023-01-07 17:42:39	","继续加油
+
+",,
+88,u_61a5ba36ad69e_rREfVg4mMR,李杰,,李杰,"13992155060	","13992155060	",已提交,"2023-01-02 00:09:51	",[图片][图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/6e9f9dcb3fb8d946e3af4cf04e47dd89.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/32fc5197e51d66816c8ebef883971010.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/e2d4f9e2ad126d940e83ae347b4333a3.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/00e34752c209d9d2939e49b43c6f261b.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/87dd2b79fc649a1d7ff1aa2a57d51824.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/5d61df6b0b8d6152762a3e6efec1085d.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/bc6bfe8898ceb720acedb73f38e0c4f1.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/32fe012974a3a6376cc7ab8042ce405f.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/769507ecdd3764236a969cfce64a4770.png",,管理台,"2023-01-07 17:42:43	","继续加油
+
+",,
+89,u_61af1ec44d69e_ueKinfxPef,江锴霖,,江锴霖,"15996523270	","15996523270	",已提交,"2023-01-01 23:50:26	",[图片],http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/2e74853a66071bfe0e49ebd2eb1413b3.jpeg,,管理台,"2023-01-07 17:42:47	","继续加油
+
+",,
+90,u_61a5ba79b293c_FWTr23DMD4,张哲,,张哲,"15719193773	","15719193773	",已提交,"2023-01-01 23:42:12	",[图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/5839dd351812bda5bcf9e0c3327978b6.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/7da88938872bd314b7084e96886914a9.png",,管理台,"2023-01-07 17:42:52	","继续加油
+
+",,
+91,u_61adf87c5fd0a_VsoJcwGeXi,李君豪,,李君豪,"18115882015	","18115882015	",已提交,"2023-01-01 22:21:45	",[图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c698cf69070fd4e624a0a7148503c1cf.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/b08495ce02ecdb0e85accf465669a20b.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c26ab32ece14fcf4e9f1de94d7d78176.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/573e5ce58b02158f301e6bf3f4534e0f.jpeg",,管理台,"2023-01-07 17:42:56	","继续加油
+
+",,
+92,u_6381b01b1ddf0_U9YVt8l9Og,戴晓龙,,戴晓龙,"18856771296	","18856771296	",已提交,"2023-01-01 22:16:24	",[图片],http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/2b7e00137e279b9d7f46af8c7107b853.jpeg,,管理台,"2023-01-07 17:43:00	","继续加油
+
+",,
+93,u_629371328800b_D9SBqh9uUh,唐鑫,,唐鑫,"13480820101	","13480820101	",已提交,"2023-01-01 21:42:48	",[图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/df8e3fb8c76414d213777ed4f73e48fa.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/dccdc4fb7239128b0be10df853ca6005.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ab178f6e87eb48519a8ad722f3be997f.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/9fc960277f73861d83630c333a002996.png",,管理台,"2023-01-07 17:43:04	","继续加油
+
+",,
+94,u_61aca7df2a21e_umADoF516e,丁宇翔-21级-南航金城,,丁宇翔,"19516088245	","19516088245	",已提交,"2023-01-01 21:35:46	",[图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/e1a5af1f1adf349eee32cc1d8744a2a5.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/9579773dc9d41d2e0393d1b611fb87dc.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/926133fe9f9872c3f11f7a79d23446e3.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/5d1a2cdec4fa2ee8eca2656c10b1077a.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/dcdbfe0277ece70f172b0e37139f32e8.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/2e0578ecca4561ebc92673b4c1effefd.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/a11a1f04ec664ea4776644e748a939aa.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/0a09b0011eed6a83a49ed1faaf309c1a.png",,管理台,"2023-01-07 17:43:09	","继续加油
+
+",,
+95,u_61ac9a81800e4_Hn5OIDThcG,21-计科-焦庆东*,,焦庆东,"15061404220	","15061404220	",已提交,"2023-01-01 21:32:09	",[图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/63e1b74ac6b13df217d0046318fdba1a.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c3238c9ed4f1dd0aa20f58cd78092aa9.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/f97246664cc7d2acdbf7350ebdf70bd0.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ca596a9f1bcfd7ce3a7b6d7816d53845.jpeg",,管理台,"2023-01-07 17:43:14	","继续加油
+
+",,
+96,u_6380820715efc_K3QHNdIWon,申菲儿,,申菲儿,"18700980699	","18700980699	",已提交,"2023-01-01 21:29:00	",[图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/dae570b48ae1166a0dcf4a1ba0360855.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/f5359a15fe2c1563a5f355dad040efad.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/da7e8c7369ba111c9b93df9e001a29b5.png",,管理台,"2023-01-07 17:43:19	","继续加油
+
+",,
+97,u_qq_61acbd1c1068a_nwtLcmGB54S,袁旭阳,,袁旭阳,"18061297073	","18061297073	",已提交,"2023-01-01 21:20:15	",[图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/74e586f4de130621fa59e5221eed44bf.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/561fe965b1201d63061c34b8eb1a3f3c.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/4d2c2fad63cc225ea8f7191ef81a92b7.png",,管理台,"2023-01-07 17:43:28	","继续保持
+",,
+98,u_61ae096949479_0Iu10P1SoT,潘宇星,,潘宇星,"18018179920	","18018179920	",已提交,"2023-01-01 21:19:23	",[图片],http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/665af71201393ff310fdfd3671203c54.jpeg,,管理台,"2023-01-07 17:43:32	","继续保持
+
+",,
+99,u_61af163e71867_T0qV3vq143,王佳乐,,王佳乐,"18061255091	","18061255091	",已提交,"2023-01-01 21:12:25	",第五第六张两张是第八题第一个的代码，最后一张是前四题截图的截图，只能交八张图片，我的文档交不了[图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/13247822645900d809d44d726a352ed0.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ebdc1d0269fd9d1c2ee800ecb0e792ed.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/f63e94820694e22018525f54eeb62b53.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/9604771492f8302734fca9044a6adc79.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/9f43c6a6192c009ce96d5c065f1ed1dd.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/e906cd5c945eb5ce1c583abbc7aaeecc.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/35e811491ad309ba1ac86eedf1c2bc28.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c8c64ef767c4c76424b2f88f2c30df11.png",,管理台,"2023-01-07 17:43:42	","完美！
+",,
+100,u_627249b2dba12_yxj2Jtp1vD,尹浩,,尹浩,"18295143722	","18295143722	",已提交,"2023-01-01 21:10:46	","最多传九张，五角星作业如下：
+http://t.csdn.cn/4Quiv[图片][图片][图片][图片][图片][图片][图片][图片][图片]","http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/f9083d9f6c7ee5001fa55307de837f18.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/60481f8cf00633c040bbab2e0b1df4c6.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/2feaaaf8ab0a42c8f6a7ca77b3e13ec0.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/534af3a699c48eebb3442754672218b6.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/6d7618b3157d17e6c4fcdce4016e465a.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/ddd816bcef6f8baee44611e71655ca39.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/aa5c302c85ab41d9e366ff30ec60e06a.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/1c81a92f0b34fadccb20af5de4968fb0.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/d2a11df892096979fc43e2a1be4a67ff.png",,管理台,"2023-01-07 17:43:47	","完美！
+
+",,
+101,u_6291ecf477bb2_PWk92Z7NvH,容楚杰,,容楚杰,"15917892732	",,已提交,"2023-01-01 20:59:57	",[图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/f9bdd861e2d3b09fe8d1a7e19eeff3de.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/069f96f61ed5b194b2d7c15e66c82225.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/5ad777f5f55f051be5df962c45e8fc37.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/b3620f76c8ca5781cbcf625ceda9544c.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/630a0499e0d2122707568e7847cdea31.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/647e522085f979f6d41d0a415e930a72.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/6b09ae0bb5a9daca14b66127e041f1b3.png",,管理台,"2023-01-07 17:43:54	","完美！
+
+",,
+102,u_61accae22bdd5_WAlyaWD2r9,贾帅,,贾帅,"13770399956	","13770399956	",已提交,"2023-01-01 20:57:49	",绘制图形代码长不方便截图[图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/fd0e9f1795b221aaba62bb0059b2b729.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/430331edd471c0d56c6dc27d56da038b.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/339cb4c226a6f3ea76909316121f38ae.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/2eb705576c57a78c52f742915b985b0d.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/1f65592d743fa7f9f9948d77bb2a813d.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/6f9f0105d8868806fb86110f9600c23a.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/2af7175bbdacf6e846be5dbca124a856.png",,管理台,"2023-01-07 17:43:58	","完美！
+
+",,
+103,u_61af1b984d404_UDL1qh9dO1,邵敬国,,邵敬国,"13401990350	","13401990350	",已提交,"2023-01-01 20:56:45	",[图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/e67bfe269b686d2467009c65ab80e5ac.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/050c71fd09ffbfa07101edfde1cda5dd.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/a4a5fdf43ec36c2f4325d661b01cfe99.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/5eb8c9fee5f0605b0aacd1c4b88822b6.jpeg",,管理台,"2023-01-07 17:44:03	","完美！
+
+",,
+104,u_61acf8d938311_IopxIEq6vC,陈超,,陈超,"18066101765	","18066101765	",已提交,"2023-01-01 20:53:37	",http://t.csdn.cn/7u1Si,,,管理台,"2023-01-07 17:44:08	","完美！
+
+",,
+105,u_lp_1638251397_61a5bb85f1984_6OZ4O6,王鹏飞,,王鹏飞,"15291358604	","15291358604	",已提交,"2023-01-01 20:44:26	","http://t.csdn.cn/3JrJu
+博客链接[图片][图片][图片][图片][图片][图片][图片]","http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/fda32a58ed67bc34aaa1b45df35753d5.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/7724a1d87da8f9247d003dfffa8653cb.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/895b4bf3c377503c005baf7ac36c11af.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/3160144384473209b25792b9dcf42e1d.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c0b0ac9491fc300fbb838061cfc100b8.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/15060aa7758fef7169a563ccd5f82f2d.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/a4ac5d7100eb79d4952359afcac5637e.png",,管理台,"2023-01-07 17:44:44	","完美！
+
+",,
+106,u_6295e5259a0c9_yzbDUagWUX,李棕凌,,李棕凌,"13542464356	",,已提交,"2023-01-01 20:41:53	",[图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672576904_29882.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672576905_16569.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672576905_59669.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672576905_76277.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672576905_82727.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672576905_93763.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672576905_79107.png | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672576905_76877.png",,管理台,"2023-01-07 17:44:49	","完美！
+
+",,
+107,u_61a5bc847964b_LDhPNVir41,张艺哲,,张艺哲,"15229077764	","15229077764	",已提交,"2023-01-01 20:40:55	",[图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/bb1c649a031d466d975af4c87904d8f5.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/3ba4a9211ae91f544cdf5690dc87325e.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/170189bb653def019b897c301e4ee284.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/cd63edfdb78394f5b51e3f387c82d8e0.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/21c76ac8b1a6ca06fce252b03cb272b3.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/769d5de0755e5a41609ee1214b4a38f1.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/37372558d0d64643e8f9126b03e86664.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/8a1dd742c451be55f545bb4afea136c8.png",,管理台,"2023-01-07 17:44:53	","完美！
+
+",,
+108,u_6291ec9677b7d_BPzmDhYX2u,林泽韩,,林泽韩,"15013906870	",,已提交,"2023-01-01 20:31:09	",[图片][图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/bd53676d8e7a3c08188d57a8e2405551.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/b8cbd7a9991f553e7ec87965316a2433.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/1a9cff964337ab5eb9a2aadfc16f975f.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/58602f02e09d29b94eb24ece7bba58cb.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/329fcdc262acae8e222ee46a31331885.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/f99afbc613f60997fc2045984fac721d.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/95e172ea555eba6e8eb7861f681237cc.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/028bfb877943da471f8371ab3fb8b3ce.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/451615a737f236d35d1f06067ebc2470.png",,管理台,"2023-01-07 17:44:58	","完美！
+
+",,
+109,u_61a5bba594786_OgqgoFy7cM,贺文杰,,贺文杰,"15891110040	","15891110040	",已提交,"2023-01-01 20:23:13	",[图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c64944358fd003929c4e11d2f0ed5d10.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/41634e92b797688783fd39ee962f3e62.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/9aa1dfc74d4a68008433bb2f183558ea.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/12d4bcd854ea1f51cb99b6ada0dbaa87.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/be8bdc6b82438c0d726d91b9182c98ed.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/a24b9e61c8f4c243f22d0eddd56bb5dd.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/6e67d581fe72d91782a7183f374618a9.png",,管理台,"2023-01-07 17:45:02	","完美！
+
+",,
+110,u_61a5bb927955d_D2rFF9c0ib,曹博.,,曹博,"18691136196	","18691136196	",已提交,"2023-01-01 20:22:04	",[图片][图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/8887add2bf80f01b77f1518a0105f78c.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/3b7b8a2dbd33db5827f9529f99fd7ba9.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/125b40b5a22ac2ddf3dbbe2bb6ce5ec1.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/cd94d7b0e63e1180ccb4013da745927f.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/6d80bcd41855d8757d1520f502da415b.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/6587cd048980cebaa24412e2ca4275ad.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ada84ea0bddf010a22c8d50b1462df77.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/02e959b2095bbe9d5a88eb97c5c16851.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/834eea9e1ce5744207a3836f60587c11.png",,管理台,"2023-01-07 17:45:08	","完美！
+
+",,
+111,u_6390202c90d4d_zzN1Vyqsg1,别兴,,别兴,"17749186323	",,已提交,"2023-01-01 20:20:09	",http://t.csdn.cn/8BS7A,,,管理台,"2023-01-07 17:45:12	","完美！
+
+",,
+112,u_61760b7161cf0_vNfcU3lLan,高美懿,,高美懿,"15353703530	","15353703530	",已提交,"2023-01-01 20:06:46	",http://t.csdn.cn/7NjPx,,,管理台,"2023-01-07 17:45:16	","完美！
+
+",,
+113,u_6249bc40524e6_f4gxwWbBOp,吴京燕,,吴京燕,"18391645350	","18391645350	",已提交,"2023-01-01 19:47:48	",[图片][图片][图片][图片][图片],"http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/af1bbbf9a8c47fbd076ec84858f7687e.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/96b32ba1a221f5ed53b4bfa1a622c432.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/aa7773c423c217907c124679bdbd4d66.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/700714956a7d3ffc4c27066f8478db82.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/56a3c35155481f2bf845aba9192cace3.png",,管理台,"2023-01-07 17:45:21	","完美！
+
+",,
+114,u_61a5bb0eb29aa_8Xbem0TeMT,石炜钊,,石炜钊,"15595243602	","15595243602	",已提交,"2023-01-01 19:42:15	",[图片][图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/dc2a11e5ea59f7e339b68bb5451031ed.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/54fb5f9ada0e625483a92cf34de2de8b.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ea3d3bf41dadae29970ed7210c05281f.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/57a39482799c10b750fcf65f45eafb84.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/11117681d64a980605ecd591f6bb0a26.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/abd89715e988c94f34949f8ab699b67a.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/66722f424852b6fce583d34c1b8865c9.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/19de606e7f09e0997dc97993e4a84dad.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/621e29b5993b72ccb39c8c0596894bcf.png",,管理台,"2023-01-07 17:45:25	","完美！
+
+",,
+115,u_61ada45187052_dgkRmndlN8,苏子彦,,苏子彦,"18855639120	","18855639120	",已提交,"2023-01-01 19:41:13	",[图片][图片][图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/4ffb38372b2f532db4e06023844b443c.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/18e75d1caf6222dd4581f44df9213f7f.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/5f497433527f3be4153272fd5a8e2093.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/b3d2c20cbcd45a2bc10d863c737f6e93.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/caea74060fa6b4ad5e9ce5a8e0579726.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/8548249f8f4a82cf6887cf37c6731a0f.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/87bc082521d7470f3e7a290d44a3406b.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/2dcfb83a25b0612e1eb7211d03087a85.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/6a080aa9e85a1a04714e024a5438f336.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/6a4ea6296e7f04a2f53ce6ce4c5cd784.png",,管理台,"2023-01-07 17:45:29	","完美！
+
+",,
+116,u_61aca5d88ca4a_1LVGtnX6ec,hyanuomn,,朱慧云,"19551231052	","19551231052	",已提交,"2023-01-01 19:39:34	",[图片],http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/1250305bc82cd65882a7b778818ba2e4.png,,管理台,"2023-01-07 17:45:34	","完美！
+
+",,
+117,u_61aca40b5e6b6_r8zJIcYbp5,卞成旭,,卞成旭,"18168303950	","18168303950	",已提交,"2023-01-01 19:36:57	",[图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/bd99fcc0da4ca3d7ac61c67b41095ee5.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/2ecac2eb32573cbb83d93ad69c507fa3.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/96bc59633d22bd9af5fd07b2e219f915.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/07d322cdf0e20ec8d21308ad9bca6a04.jpeg",,管理台,"2023-01-07 17:45:39	","完美！
+
+",,
+118,u_638b2dc052320_l1np5GTOgC,小卫,,张卫虎,"13772357605	","13772357605	",已提交,"2023-01-01 19:31:39	","
+[图片][图片][图片][图片]","http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/3525faa31a4258ed921a638507e10303.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/683c38774fdb80e6e966b50d81801cba.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/96dfbb1e8b118f31b3a6d03a6355f882.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/30844af33b416cbb7902e211bdb11dcb.png",,管理台,"2023-01-07 17:45:43	","完美！
+
+",,
+119,u_qq_61ac9a727463c_2lKODGKk3wj,。。,,肖扬,"18066083292	","18066083292	",已提交,"2023-01-01 19:07:44	",[图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c744907c56015dab271e428497f462b2.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/209d5d7057afa018f65e97c4e9d45937.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ac48f3c15bb45a1ebc837f4badbf8b03.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c67f4bbfa07f5aec5a27f4ea7686f5f5.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c0ba50b9cdff56cd646e2641b7162b4d.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/df0361d292d4e3b480c7ad5f7e8af495.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/a73ec237c6c1445128082bf1a4fe7cfb.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/9ca9de7220524fffcf3ac59018ef3e07.jpeg",,管理台,"2023-01-07 17:45:47	","完美！
+
+",,
+120,u_60781b021b45b_hCGUgzdot1,陈体康,,陈体康,"15199608954	","15199608954	",已提交,"2023-01-01 19:05:19	",[图片][图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/4a9e187ac360df25f553e9df13b5abfa.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/24a27d99fc091fff5aba0d5207ee0a20.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/09341156b9bc19bc8e708e43d676b009.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/2027b82e1fef4cdc38b8652817f6a459.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/f7bbbb02b5c12081cb3cce6b1885614a.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/88ba25253e45f56a54a2fc7de61192c8.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/968fe5f7cd5835919e97c654b2fc097c.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/8a5320c26bc386f42f1432539fd7b51c.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/11ab29ceea2123ccd562cc8faa4fce34.png",,管理台,"2023-01-07 17:45:52	","完美！
+
+",,
+121,u_63774be15b37e_7erwXUcbkM,习浩,,习浩,"18329735020	","18329735020	",已提交,"2023-01-01 18:55:44	",[图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/1268eaf084c0af00e7dd28747e2a7b38.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/fbe2bf5d678e02b45dc70481e6763b67.png",,管理台,"2023-01-07 17:46:00	","继续保持
+",,
+122,u_61ada4783d596_K6ubHAJrDv,姚辉,,姚辉,"18018100247	","18018100247	",已提交,"2023-01-01 18:53:30	",[图片][图片],"http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/288df430cb8ac40e81e3a0ad0936b299.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/94526df65e392eb3588582bb6bb9de57.png",,管理台,"2023-01-07 17:46:05	","继续保持
+
+",,
+123,u_6257da674a908_FmbO5K2bI3,小C同学,,曹乔,"17743254852	","17743254852	",已提交,"2023-01-01 18:52:28	",[图片],http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/9cc191174cc2f0cc4c1ca4f8112ee4d3.jpg,,管理台,"2023-01-07 17:46:10	","继续保持
+
+",,
+124,u_61aca2ef6a022_DierHAHld2,韩泽彬,,韩泽彬,"13160017768	","13160017768	",已提交,"2023-01-01 18:46:07	",[图片][图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/6f95effd4435df78cc6076b9534370b4.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/3b9efba42ff4625d133b874abf965b41.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/25d8e4a7fa32d5fc837a2abfb7cb1ae8.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/d17d60179c1aaa309a64ddab9bf6626c.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/984b9edb385552188c648ae6de186838.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/f0f6f6eca4400055d78166314bf4820c.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/58f8889b325bf3e3cac000fb018ef6a4.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/9b773d1150a60203d3b61595eab7325e.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/548d7442739dfebd3010eff8975dace4.jpeg",,管理台,"2023-01-07 17:46:14	","继续保持
+
+",,
+125,u_61af0ebe4c8fe_rkM8uSg7Jc,王一,,王一,"18861342095	","18861342095	",已提交,"2023-01-01 18:44:21	","%c代表转换成Ascll码%X(%x)表示转换成十六进制
+
+%f:浮点型数据，小数后6位，第7位四合五入，%?f?第一问号表示总宽度包含小数点，第二个问号表示小于零部分，从左向右保留
+%e:科学计数法输出   \t表示tab键 \n表示换行
+
+x  or  y  ： x为真，值为x ，短路运算  
+x and  y  ： x为假 ，值为假 ，短路运算
+数字零、空对象、特殊对象None都被认作False
+
+a.penup()  提笔
+a.pendown() 落笔
+a.rigth(角度)[图片][图片][图片][图片][图片][图片][图片][图片][图片]","http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/37e955003f492a5ac55c41ab965fa839.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/4278338f819f650b35a9d67d3f1985ba.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/aaf25894dbb6099474e17e071c31f05f.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/e63391bfdbd1af0e697b448bd924d7d3.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/90e690b790d9aafd8ad08fdc64660c79.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/3c38c18266645f2bf12cec441b8e48f0.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/2c32b6f8eaa73f15e1f976b4b028bf40.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/c59411ae1aee7bcf9ccec696b2604e0b.png | http://wechatapppro-1252524126.file.myqcloud.com/1252524126/wechatapppro/appISt9v7wb6304/image/e1d67414303412656efb45c1ded0b3f7.png",,管理台,"2023-01-07 17:46:20	","继续保持
+
+",,
+126,u_61aca0df3bd57_UrxKso2QiM,郑启梁,,郑启梁,"19859309851	","19859309851	",已提交,"2023-01-01 18:42:58	",这个上传这么糊能行吗？[图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/824f29ca6ed46d910a2c8c0cccb79688.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/d88ad7229e2ad488d2b02d05a627e625.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/2eb4bc4a73f3900c45e4ac7f9ff066f2.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ac6482358df940a9e0181eb7bbe7d18a.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/80da88eab5f84a7d7e87af8e1bdabe4f.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/28a66895929c65a1c58d067978f8e180.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/97d53e2f8c0a0707fc5cc3123234fcd0.png",,管理台,"2023-01-07 17:46:24	","继续保持
+
+",,
+127,u_63774c054cd5c_sD9lWqYErN,才疏学浅ぉ,,孟凡策,"15631757160	","15631757160	",已提交,"2023-01-01 18:37:05	",[图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/6f7542ee604fcfe7b8476a4d9b6a3669.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/b3608cbe4742062d091c891f1d108a2b.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/b098f1c8af59b4553a9528d6af7aa57c.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/53c21b8b8ce56d3f7f3a075290c3a312.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/4cbc1a13f36d7f6de64817dfc58f8df0.png",,管理台,"2023-01-07 17:46:29	","继续保持
+
+",,
+128,u_61acaa25361d1_gpccdaizcb,杜烨承,,杜烨承,"19825613888	","19825613888	",已提交,"2023-01-01 18:36:05	",[图片][图片][图片],"http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672569362_32860.jpg | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672569362_80777.jpg | http://wechatappdev-10011692.file.myqcloud.com/appISt9v7wb6304/common_h5_1672569362_82644.jpg",,管理台,"2023-01-07 17:46:33	","继续保持
+
+",,
+129,u_61aca05453da5_UT1ZcUCg7P,梅杰,,梅杰,"18921939278	","18921939278	",已提交,"2023-01-01 18:22:53	",[图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/b64e19190d08d3ddfedd73c6e7df0f78.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/8ce9bc7213092c9f9cbd1ecb68616961.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/85a3f5a955e712d3392147555a105577.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/81d30546ec26bd7b1690ef51214c7476.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/aad85e9b8a56a71665cd0f642bc7767c.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/7c7f6b2fb693a11703a5df2998e14545.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/8982fc8fd77366a5706cb6f67a365412.png",,管理台,"2023-01-07 17:46:39	","继续保持
+
+",,
+130,u_61af1ca97036b_k4FaTbX6rU,程洋,,程洋,"18066102798	","13391236989	",已提交,"2023-01-01 18:21:16	",[图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/3d33b7ade3504988a2188eea512a7b4a.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/f2413a5b99cfd9c5e9a1e6f3ab523bf4.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/6595063debaabc11e853089b6efe5d2b.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/d3e412c38a11df5506d79c92943fde4e.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/981082265730c8224a960f3caac2ddd5.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/bb85704fe943efaa4814dba7d128a951.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/455414acab398d41368053e43d56f1a5.png",,管理台,"2023-01-07 17:46:43	","继续保持
+
+",,
+131,u_6381e54526ee9_sAAQSet4cE,杨子薪,,杨子薪,"15619961669	","15619961669	",已提交,"2023-01-01 18:16:46	",[图片][图片][图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/5fccca44cb265323bab55d0af2969ff3.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/9a28ddac20f5e33481e411adc728c659.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/7f116d9e5182b0a8bbe519b89d4169d6.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/a01703481c2dc3db8bea80868e061b46.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/7339ebf4f315255cc6c1a8afb03cd22e.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/bef357edf9a30d4247e25e0b577f6f93.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/841ea3f58b5da9cd103fadb46d06a552.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/9223e8419a6aa12ec509edd0cc32244b.png",,管理台,"2023-01-07 17:46:49	","继续保持
+
+",,
+132,u_61a5baf85b9ae_FmECDbqTLi,陈志行,,陈志行,"16630067113	","16630067113	",已提交,"2023-01-01 18:11:54	",[图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/cb42561d02b9dc6bafb80d4d88095c41.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/59e29234a01f6c30cf0283e7b1c4d789.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/444a2adf90ee9ee84f3be3eb9b87bb4f.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/51db537e29735a054fc6e14393f7a246.png",,管理台,"2023-01-07 17:46:53	","继续保持
+
+",,
+133,u_62745a2e10a38_9AHFSCbbUc,张珍华,,张珍华,"18089211907	","18089211907	",已提交,"2023-01-01 18:07:57	","
+
+[图片][图片][图片][图片][图片][图片][图片][图片][图片]","http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/9af097573f2b57b8a1fc144a8510e895.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/483fba0c50ea24a7304ded1a4cff719b.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/58011eb41175f3649356280d9d4766f0.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/9fcf557e078668947322b6a83e2cb305.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/5d8539ef2ed1a3d7cd9de972fffb3975.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/11f3efec63ed0378dee95b35e328acc6.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/a49c4c60c17465cb36e33c99c57137b5.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/a1eb3662a31f5aced50daafff5d3bffb.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ce5ee2eb5908120090e0f4505df89c71.jpeg",,管理台,"2023-01-07 17:46:59	","继续保持
+
+",,
+134,u_61acab59548d5_QHYjQtzRIT,卢洋,,卢洋,"18980693445	","18980693445	",已提交,"2023-01-01 18:06:58	",[图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/491f048678ff73edcf912a7e15cb21bf.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/cc945247837fea7e1eae8c226f2000b4.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/e256ce10ec2219c280f9ad41376e2e38.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/ed36f4a148bf58e9181562f618c2aacf.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/72128193ac1d1372e65081748df5846a.png",,管理台,"2023-01-07 17:47:04	","继续保持
+
+",,
+135,u_61af15de5a079_F3vYgW5TfO,王进,,王进,"19505058692	","19505058692	",已提交,"2023-01-01 17:59:55	",http://t.csdn.cn/pgUnP,,,管理台,"2023-01-07 17:47:09	","继续保持
+
+",,
+136,u_61ac9ae25dd37_UljPEeJpA9,刘一凡,,刘一凡,"18118827204	","18118827204	",已提交,"2023-01-01 17:47:39	",[图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/22167569eaf436ef3f11d21083f48fd9.jpeg | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/26d23917981bf78450d03cb0c5641b58.jpeg",,管理台,"2023-01-07 17:47:14	","继续保持
+
+",,
+137,u_634cda3af5df6_XA5NMDR1rE,袁兆委,,袁兆委,"13330740455	",,已提交,"2023-01-01 17:39:57	",袁兆委[图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/07899ec690642f83f0381ec95d0afb66.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/7af299030f55a831eb63baddbbc01ed6.png",,管理台,"2023-01-07 17:47:18	","继续保持
+
+",,
+138,u_61ada30e30325_LO9DGxQkxW,天明卿,,张弛,"15106163575	","15106163575	",已提交,"2023-01-01 17:39:13	",[图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/d049e8ca6bc22c8c5160919cadb50ed0.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/3c2ebab6d2b4c2a2437c9d7a11686c80.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/f38922aadc31bed98125b0004c8e6a0d.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/dc70ad62f92ff5de84e76b9224477aec.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/fc8a9803ddeefcd59a1fe2fd4f191cc1.png",,管理台,"2023-01-07 17:47:25	","继续保持
+
+",,
+139,u_61a5bab7b2164_LiuKawPTti,王立峰,,王立峰,"15028696972	","15028696972	",已提交,"2023-01-01 17:38:39	",[图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/264a6674af94b0fa4620ca26e30080c7.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/1baa7c4dc894f673b82c1a1b75262d0a.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/aae276269a2f455b49ed68637ea55e48.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/e589feb16cfc0eaa7b262820e8346f06.png",,管理台,"2023-01-07 17:47:29	","继续保持
+
+",,
+140,u_61a5baa9b2960_g40nBIInxH,李佳旺,,李佳旺,"15686210996	","18291918359	",已提交,"2023-01-01 17:35:03	",[图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c4a19c94e6cb0aea53886f762b598d40.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/a50ffb248205eb8d3ae1a85fa57c460a.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/aac7413c87656b154f8da6a3e4b76f74.png",,管理台,"2023-01-07 17:47:34	","继续保持
+
+",,
+141,u_61af2faa59bb6_quKglnRzwA,彭昱嘉,,彭昱嘉,"17849563691	","17849563691	",已提交,"2023-01-01 17:32:14	",[图片][图片][图片][图片][图片][图片],"http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/84007fcb96d8c957a75bbd3a47393001.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/c77dedad9941d9293c1fcf30a7e75a1a.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/e7d210a322cff289beca41d207fb4a7d.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/1e7de115ed2693e947b0b2c8262499a5.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/035d9fdb380d724bad6567d477f4b973.png | http://wechatappdev-1252524126.file.myqcloud.com/appISt9v7wb6304/image_compressed/0b3db647c727a59c9a0e1d6fcaf09a39.png",,管理台,"2023-01-07 17:47:40	","继续保持
+
+",,
+142,u_6002cccf42524_vyx89xrla0,陈嘉欣,,陈嘉欣,"13260757998	","13260757998	",未提交,,,,,,,,,
+143,u_61aca82e545b6_wt03To2Eg1,陈凌丰,,陈凌丰,"13951021916	","13951021916	",未提交,,,,,,,,,
+144,u_62fef9bf73521_B4b29Oc2mx,王思语,,王思语,"15029887161	","15029887161	",未提交,,,,,,,,,
+145,u_61a5b90f9007d_IbrWeoHb8p,张晗,,张晗,"15109215076	","15109215076	",未提交,,,,,,,,,
+146,u_61a753e9c67d6_I9lxUr6iIM,许文涛,,许文涛,"15109271501	","15109271501	",未提交,,,,,,,,,
+147,u_61af1bb24df4f_qu7eP8Sx0Q,KOKO,,张驰,"15190949402	","15190949402	",未提交,,,,,,,,,
+148,u_61a5baf4b2997_BnyFn083zj,尚艳红,,尚艳红,"15229820822	","15229820822	",未提交,,,,,,,,,
+149,u_62a845ab8319d_XbGFrD78kr,王涛,,王涛,"15660585075	","15660585075	",未提交,,,,,,,,,
+150,u_60c9e5ec59f71_8CBhHVtxOW,晚安爱丽丝,,于怡,"15991877673	","+86-15991877673	",未提交,,,,,,,,,
+151,u_qq_61aca55e59dc8_KQcuzbrNpIK,刘永乾,,刘永乾,"17327710783	","17327710783	",未提交,,,,,,,,,
+152,u_61a5bbc0a6994_2X20v1l9OG,王一荻,,王一荻,"17719524478	","13289420521	",未提交,,,,,,,,,
+153,u_61af168d57892_k3vEds0Fu1,朱义军,,朱义军,"17766405989	","17766405989	",未提交,,,,,,,,,
+154,u_60b5cb204cd8d_lqU1I82je6,王启元,,王启元,"18092373910	","18092373910	",未提交,,,,,,,,,
+155,u_61dbfc6e698b6_BoWicTHUFy,祁高印,,祁高印,"18796668857	","18796668854	",未提交,,,,,,,,,
+156,u_62c8f3cc3a2a3_DUxT7i2BVZ,夏武,,夏武,"18890506453	","18890506453	",未提交,,,,,,,,,
+157,u_61a5bc2baf5d7_0koyYtOuFX,李鸿,,李鸿,"19922034129	","19922034129	",未提交,,,,,,,,,
+158,u_61ac9aa536629_3lNPBW0bwa,徐毅春,,徐毅春,"19962761182	","19962761182	",未提交,,,,,,,,,

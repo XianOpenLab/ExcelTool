@@ -1,0 +1,8 @@
+openlabTool/config.yml
+openlabTool/*.csv
+openlabTool/*.xlsx
+openlabTool/__pycache__/
+openlabTool/*.zip
+openlabTool/*.7z
+openlabTool/*.rar
+openlabTool/.idea/
