@@ -1,8 +1,8 @@
 import openai
 
-openai.api_key = "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"
+openai.api_key = "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"
 response = openai.Image.create(
-  prompt="科幻日漫风格的头像",
+  prompt="科幻感的动漫头像",
   n=1,
   size="1024x1024"
 )

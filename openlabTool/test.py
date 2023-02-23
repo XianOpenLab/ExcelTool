@@ -1,7 +1,7 @@
 import openai
 import json
 
-openai.api_key = "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"
+openai.api_key = "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"
 communication = ""
 AI = ""
 while True:
