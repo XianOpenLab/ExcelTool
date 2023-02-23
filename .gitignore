@@ -1,6 +1,9 @@
-*.yml
 *.csv
 *.xlsx
+*.png
+*.jpg
+*.bmp
+openlabTool/config.yml
 openlabTool/__pycache__
 openlabTool/out
 openlabTool/*.zip
@@ -8,3 +11,5 @@ openlabTool/*.7z
 openlabTool/*.rar
 openlabTool/.idea/
 .DS_Store
+openlabTool/test.py
+openlabTool/imageTest.py

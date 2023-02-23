@@ -1,16 +1,16 @@
 import csv
 import os
+import sys
+
 import chardet
+from tkinter import messagebox
 
 
 def check_encoding(filepath):
     with open(filepath, 'rb') as input_file:
         raw_data = input_file.read()
         result = chardet.detect(raw_data)
-        if result['encoding'] == 'utf-8':
-            return True
-        else:
-            return False
+        return result['encoding']
 
 
 def read_csv(file):
@@ -18,11 +18,15 @@ def read_csv(file):
     data_list = []
 
     # 打开csv文件
-    if check_encoding(file):
-        encoding = 'utf-8'
-    else:
-        encoding = 'gbk '
-    with open(file, 'r', encoding=encoding, errors="ignore") as csv_file:
+    # if check_encoding(file):
+    #     encoding = 'utf-8'
+    # else:
+    #     encoding = 'gbk'
+    encoding = check_encoding(file)
+    if encoding is None:
+        messagebox.showerror(message="《" + os.path.basename(file) + "》编码格式异常，请用wps或者office另存为，最好指定为utf-8")
+        sys.exit()
+    with open(file, 'r', encoding=encoding,errors='replace') as csv_file:
         # 逐行读取csv文件内容
         try:
             csv_reader = csv.reader(csv_file)
@@ -30,7 +34,8 @@ def read_csv(file):
                 data_list.append(row)
         except Exception as e:
             print(e)
-            print("《" + os.path.basename(file) + "》格式异常，请用wps或者office另存份文件，再试")
+            messagebox.showerror(message="《" + os.path.basename(file) + "》编码格式异常，请用wps或者office另存为，最好指定为utf-8")
+            sys.exit()
 
 
     # 输出读取的CSV文件内容

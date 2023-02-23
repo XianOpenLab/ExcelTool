@@ -7,7 +7,7 @@ import shutil
 import pic2excel
 from Sheet import Sheet
 from tkinter import Tk
-from tkinter import filedialog
+from tkinter.filedialog import askopenfilename, askopenfilenames
 from constants import *
 
 warnings.filterwarnings('ignore')
@@ -17,7 +17,7 @@ EXAM = 2
 EXPORT_WITH_FORM = 1
 EXPORT_NEW = 2
 root = Tk()
-root.wm_attributes('-topmost', 1)
+root.attributes("-alpha", 0)
 
 
 def add_submit_count(excel, csv, export_type):
@@ -318,8 +318,8 @@ def delete_student():
 def select_files(filetypes=None):
     if filetypes is None:
         filetypes = [('excel', '*.csv'), ('excel', '*.xlsx'), ('excel', '*.xls')]
-    root.withdraw()
-    file_list = filedialog.askopenfilenames(filetypes=filetypes, parent=root)
+    root.wm_attributes('-topmost', True)
+    file_list = askopenfilenames(filetypes=filetypes, parent=root)
     root.update()
     return file_list
 
@@ -327,8 +327,8 @@ def select_files(filetypes=None):
 def select_file(filetypes=None):
     if filetypes is None:
         filetypes = [('excel', '*.csv'), ('excel', '*.xlsx'), ('excel', '*.xls')]
-    root.withdraw()
-    file = filedialog.askopenfilename(filetypes=filetypes, parent=root)
+    root.wm_attributes('-topmost', True)
+    file = askopenfilename(filetypes=filetypes, parent=root)
     root.update()
     return file
 
