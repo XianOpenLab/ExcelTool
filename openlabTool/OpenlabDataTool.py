@@ -17,6 +17,7 @@ EXAM = 2
 EXPORT_WITH_FORM = 1
 EXPORT_NEW = 2
 root = Tk()
+root.wm_attributes('-topmost', 1)
 
 
 def add_submit_count(excel, csv, export_type):
@@ -318,7 +319,7 @@ def select_files(filetypes=None):
     if filetypes is None:
         filetypes = [('excel', '*.csv'), ('excel', '*.xlsx'), ('excel', '*.xls')]
     root.withdraw()
-    file_list = filedialog.askopenfilenames(filetypes=filetypes)
+    file_list = filedialog.askopenfilenames(filetypes=filetypes, parent=root)
     root.update()
     return file_list
 
@@ -327,7 +328,7 @@ def select_file(filetypes=None):
     if filetypes is None:
         filetypes = [('excel', '*.csv'), ('excel', '*.xlsx'), ('excel', '*.xls')]
     root.withdraw()
-    file = filedialog.askopenfilename(filetypes=filetypes)
+    file = filedialog.askopenfilename(filetypes=filetypes, parent=root)
     root.update()
     return file
 
