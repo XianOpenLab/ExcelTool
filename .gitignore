@@ -1,7 +1,8 @@
-openlabTool/config.yml
-openlabTool/*.csv
-openlabTool/*.xlsx
-openlabTool/__pycache__/
+*.yml
+*.csv
+*.xlsx
+openlabTool/__pycache__
+openlabTool/out
 openlabTool/*.zip
 openlabTool/*.7z
 openlabTool/*.rar
