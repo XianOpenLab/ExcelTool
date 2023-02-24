@@ -1,14 +1,15 @@
 import os
-import sys
-import CsvParser
-import ExcelParser
-import warnings
 import shutil
-import pic2excel
-from Sheet import Sheet
+import sys
+import warnings
 from tkinter import Tk
 from tkinter.filedialog import askopenfilename, askopenfilenames
+import csvParser
+import excelParser
+import pic2excel
+from Sheet import Sheet
 from constants import *
+from customException import *
 
 warnings.filterwarnings('ignore')
 
@@ -151,9 +152,9 @@ def output(excel, file_name):
         os.makedirs(current_path + "out")
     if file_name is not None:
         file_name = file_name.replace(".csv", "").replace(".xlsx", "").replace(".xls", "")
-        ExcelParser.write_excel(get_out_path(file_name), excel.get_form_data())
+        excelParser.write_excel(get_out_path(file_name), excel.get_form_data())
     else:
-        ExcelParser.write_excel(get_out_path(None), excel.get_form_data())
+        excelParser.write_excel(get_out_path(None), excel.get_form_data())
 
 
 def find(excel, name):
@@ -166,43 +167,24 @@ def find(excel, name):
 
 def get_csv(step_type):
     if step_type == WORK:
-        print("""
-***********************************
-选取进行统计的作业表(多选),按Enter继续
-***********************************
-                    """)
-        input()
+        # print(MENU_WORK)
+        # input()
         files = select_files()
     else:
-        print("""
-**********************
-选取成绩单表,按Enter继续
-**********************
-                            """)
-        input()
+        # print(MENU_SCORE)
+        # input()
         files = [select_file()]
-    if files == ['']:
-        return None
     csv_list = [Sheet(os.path.basename(csv),
-                      CsvParser.read_csv(csv)
+                      csvParser.read_csv(csv)
                       if csv.endswith(".csv") else
-                      ExcelParser.read_excel(csv))
+                      excelParser.read_excel(csv))
                 for csv in files]
     return csv_list
 
 
 def select_out_type(step_type):
     csv_list = get_csv(step_type)
-    if csv_list is None or len(csv_list) == 0:
-        return None, None, None
-    print(
-        """
-******************************
-按1，将结果导出到一个指定的表格中
-按2，将结果导出到新的文件中
-******************************
-        """
-    )
+    print(MENU_OUTPUT)
     while True:
         input_str = input("请输入:")
         input_str = input_str.strip()
@@ -210,13 +192,11 @@ def select_out_type(step_type):
             num = int(input_str)
             if num == EXPORT_WITH_FORM:
                 file = select_file()
-                if file is None or file == '':
-                    return None, None, None
-                elif file.endswith(".xlsx") or file.endswith(".xls"):
+                if file.endswith(".xlsx") or file.endswith(".xls"):
                     return Sheet(os.path.basename(file),
-                                 ExcelParser.read_excel(file)), csv_list, EXPORT_WITH_FORM
+                                 excelParser.read_excel(file)), csv_list, EXPORT_WITH_FORM
                 else:
-                    return Sheet(os.path.basename(file), CsvParser.read_csv(file)), csv_list, EXPORT_WITH_FORM
+                    return Sheet(os.path.basename(file), csvParser.read_csv(file)), csv_list, EXPORT_WITH_FORM
             elif num == EXPORT_NEW:
                 title = [FIELD_INDEX, FIELD_NAME]
                 excel = Sheet("output.xlsx", [title])
@@ -234,21 +214,14 @@ def main_func(select_str):
     print("开始执行。。。")
     if select_str == "1":
         excel, csv_list, export_type = select_out_type(WORK)
-        if excel is None or csv_list is None or export_type is None:
-            return
         statistics_homework(excel, csv_list, export_type)
     elif select_str == "2":
         excel, csv_list, export_type = select_out_type(EXAM)
-        if excel is None or csv_list is None or export_type is None:
-            return
         statistics_exam(excel, csv_list, export_type)
     elif select_str == "3":
-        if not delete_student():
-            return
+        delete_student()
     elif select_str == "4":
         png = select_file(filetypes=[('pic', '*.png'), ('pic', '*.jpg'), ('pic', '*.jpeg')])
-        if png is None or png == '':
-            return
         file_path = pic2excel.image2excel(png)
         file_path = shutil.move(file_path, current_path + os.path.basename(file_path))
         print("excel文件已生成:" + file_path)
@@ -262,40 +235,23 @@ def main_func(select_str):
 
 
 def delete_student():
-    print("""
-**********************************
-指定要批量删除的"目标"表，按Enter键继续
-**********************************
-            """)
-    input()
+    # print(MENU_DST)
+    # input()
     excel = select_file()
-    if excel == '':
-        return False
     if excel.endswith(".xlsx") or excel.endswith(".xls"):
-        e = ExcelParser.read_excel(excel)
+        ex = excelParser.read_excel(excel)
     else:
-        e = CsvParser.read_csv(excel)
-    excel = Sheet(os.path.basename(excel), e)
-    print("""
-*****************************
-指定"参考"表(多选)，按Enter键继续
-*****************************
-            """)
+        ex = csvParser.read_csv(excel)
+    excel = Sheet(os.path.basename(excel), ex)
+    print(MENU_SRC)
     input()
     csv_list = select_files()
-    if csv_list == '':
-        return False
     csv_list = [Sheet(os.path.basename(csv),
-                      CsvParser.read_csv(csv)
+                      csvParser.read_csv(csv)
                       if csv.endswith(".csv") else
-                      ExcelParser.read_excel(csv))
+                      excelParser.read_excel(csv))
                 for csv in csv_list]
-    print("""
-*************************************
-按1，"目标"将删除"参考"中存在的学员
-按2，"目标"将保留"参考"中存在的学员其余删除
-*************************************
-            """)
+    print(MENU_DELETE)
     while True:
         num = input("请输入:")
         if num.isdigit():
@@ -312,7 +268,6 @@ def delete_student():
                 print("未找到对应项")
         else:
             print("输入不正确")
-    return True
 
 
 def select_files(filetypes=None):
@@ -321,6 +276,9 @@ def select_files(filetypes=None):
     root.wm_attributes('-topmost', True)
     file_list = askopenfilenames(filetypes=filetypes, parent=root)
     root.update()
+
+    if file_list == '':
+        raise CancelSelectFileException("取消选择文件")
     return file_list
 
 
@@ -330,6 +288,8 @@ def select_file(filetypes=None):
     root.wm_attributes('-topmost', True)
     file = askopenfilename(filetypes=filetypes, parent=root)
     root.update()
+    if file == '':
+        raise CancelSelectFileException("取消选择文件")
     return file
 
 
@@ -338,20 +298,17 @@ if __name__ == '__main__':
     if not os.path.exists(current_path + "out"):
         os.makedirs(current_path + "out")
 
-    m_menu = """
-***********************
-按1，统计作业提交率
-按2，提取考试成绩
-按3，批量删除学员
-按4，图片转为excel文件
-按0，退出程序
-***********************"""
-    print(m_menu)
     while True:
-        in_s = input("请输入:").strip()
-        if in_s.isdigit():
-            # main_func(m_csv_list, in_s)
-            main_func(in_s)
-            print(m_menu)
-        else:
-            print("未找到对应项")
+        try:
+            print(MENU_MAIN)
+            in_s = input("请输入:").strip()
+            if in_s.isdigit():
+                main_func(in_s)
+                print(MENU_MAIN)
+            else:
+                print("未找到对应项")
+        except Exception as e:
+            print(e.__str__())
+            if isinstance(e, CsvReadException):
+                print("按Enter继续。。。")
+                input()

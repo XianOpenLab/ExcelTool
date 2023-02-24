@@ -1,9 +1,9 @@
 import csv
 import os
-import sys
 
 import chardet
-from tkinter import messagebox
+
+from openlabTool.customException import CsvReadException
 
 
 def check_encoding(filepath):
@@ -24,9 +24,8 @@ def read_csv(file):
     #     encoding = 'gbk'
     encoding = check_encoding(file)
     if encoding is None:
-        messagebox.showerror(message="《" + os.path.basename(file) + "》编码格式异常，请用wps或者office另存为，最好指定为utf-8")
-        sys.exit()
-    with open(file, 'r', encoding=encoding,errors='replace') as csv_file:
+        raise CsvReadException("《" + os.path.basename(file) + "》编码格式异常，请用wps或者office另存为，最好指定为utf-8")
+    with open(file, 'r', encoding=encoding, errors='replace') as csv_file:
         # 逐行读取csv文件内容
         try:
             csv_reader = csv.reader(csv_file)
@@ -34,9 +33,8 @@ def read_csv(file):
                 data_list.append(row)
         except Exception as e:
             print(e)
-            messagebox.showerror(message="《" + os.path.basename(file) + "》编码格式异常，请用wps或者office另存为，最好指定为utf-8")
-            sys.exit()
-
+            raise CsvReadException(
+                "《" + os.path.basename(file) + "》编码格式异常，请用wps或者office另存为，最好指定为utf-8")
 
     # 输出读取的CSV文件内容
     csv_file.close()

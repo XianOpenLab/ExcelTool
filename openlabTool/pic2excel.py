@@ -1,5 +1,6 @@
-import ocr
 import yaml
+
+import ocr
 
 
 def get_yaml_data(yaml_file):

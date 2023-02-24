@@ -1,9 +1,10 @@
 # coding=utf-8
+import base64
+
 from tencentcloud.common import credential
 from tencentcloud.common.profile.client_profile import ClientProfile
 from tencentcloud.common.profile.http_profile import HttpProfile
 from tencentcloud.ocr.v20181119 import ocr_client, models
-import base64
 
 
 # OCR识别封装
