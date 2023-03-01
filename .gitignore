@@ -13,3 +13,6 @@ openlabTool/.idea/
 .DS_Store
 openlabTool/chatGPT.py
 openlabTool/chatGPTInImage.py
+openlabTool/openlabDataTool.zip
+openlabTool/build
+openlabTool/dist
