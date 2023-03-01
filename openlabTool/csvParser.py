@@ -3,7 +3,7 @@ import os
 
 import chardet
 
-from openlabTool.customException import CsvReadException
+from customException import CsvReadException
 
 
 def check_encoding(filepath):
