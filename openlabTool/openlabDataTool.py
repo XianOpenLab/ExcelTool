@@ -7,7 +7,7 @@ from tkinter.filedialog import askopenfilename, askopenfilenames
 import csvParser
 import excelParser
 import pic2excel
-from Sheet import Sheet
+from sheet import Sheet
 from constants import *
 from customException import *
 
@@ -22,6 +22,13 @@ root.attributes("-alpha", 0)
 
 
 def add_submit_count(excel, csv, export_type):
+    '''
+    每交一次作业就进行一次累加
+    :param excel: 记录结果的表格
+    :param csv: 作业表格
+    :param export_type: 导出类型
+    :return:
+    '''
     for i in range(len(csv.data)):
         index = find(excel, csv.get(i, FIELD_NAME))
         if index is not None:

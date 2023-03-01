@@ -11,5 +11,5 @@ openlabTool/*.7z
 openlabTool/*.rar
 openlabTool/.idea/
 .DS_Store
-openlabTool/test.py
-openlabTool/imageTest.py
+openlabTool/chatGPT.py
+openlabTool/chatGPTInImage.py
