@@ -39,3 +39,4 @@ def read_csv(file):
     # 输出读取的CSV文件内容
     csv_file.close()
     return data_list
+

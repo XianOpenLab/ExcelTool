@@ -2,8 +2,8 @@ class Sheet:
     def __init__(self, filename, form=None):
         if form is None:
             form = []
-        self.title = form[0]
-        self.data = form[1:]
+        self.title: list = form[0]
+        self.data: list = form[1:]
         self.filename = filename
 
     def get_form_data(self):
@@ -27,6 +27,15 @@ class Sheet:
         if len(self.data) > index and self.title.__contains__(name):
             position = self.title.index(name)
             return self.data[index][position]
+
+    def getCol(self, name):
+        if name in self.title:
+            index = self.title.index(name)
+            return [item[index] for item in self.data]
+
+    def getRow(self, index):
+        if 0 <= index < len(self.data):
+            return self.data[index]
 
     def set(self, index, name, value):
         if len(self.data) > index:

@@ -104,8 +104,9 @@ def statistics_exam(excel, csv_list, export_type):
             else:
                 for i in range(len(csv.data)):
                     index = find(excel, csv.get(i, FIELD_REAL_NAME))
-                    if index is not None:
-                        excel.set(index, FIELD_SCORE, csv.get(i, FIELD_SCORE))
+                    score = csv.get(i, FIELD_SCORE)
+                    if index is not None and excel.get(index, FIELD_SCORE) < score:
+                        excel.set(index, FIELD_SCORE, score)
                 output(excel, excel.filename)
 
 
@@ -233,6 +234,8 @@ def main_func(select_str):
         file_path = pic2excel.image2excel(png)
         file_path = shutil.move(file_path, current_path + os.path.basename(file_path))
         print("excel文件已生成:" + file_path)
+    elif select_str == "5":
+        merge_paper()
     elif select_str == "0":
         print("程序已退出")
         sys.exit()
@@ -240,6 +243,28 @@ def main_func(select_str):
         print("输入不正确，请重新输入")
     print("执行完毕")
     input("按Enter键继续。。。")
+
+
+def merge_paper():
+    files = select_files([('excel', '*.csv')])
+    csv_list = [Sheet(os.path.basename(f), csvParser.read_csv(f)) for f in files]
+    result = csv_list[0]
+    name_ls = result.getCol(FIELD_REAL_NAME)
+    csv_list.pop(0)
+    for csv in csv_list:
+        for i in range(len(csv.data)):
+            name = csv.get(i, FIELD_REAL_NAME)
+            if name in name_ls:
+                index = name_ls.index(name)
+                score_origin = result.get(index, FIELD_SCORE)
+                score_new = csv.get(i, FIELD_SCORE)
+                if score_new > score_origin:
+                    result.set(index, FIELD_SCORE, score_new)
+                    result.set(index, FIELD_OBJECTIVE_SCORE, csv.get(i, FIELD_OBJECTIVE_SCORE))
+                    result.set(index, FIELD_SUBJECTIVE_SCORE, csv.get(i, FIELD_SUBJECTIVE_SCORE))
+            else:
+                result.data.append(csv.getRow(i))
+    output(result, result.filename)
 
 
 def delete_student():
