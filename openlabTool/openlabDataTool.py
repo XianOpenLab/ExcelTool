@@ -1,6 +1,7 @@
 import os
 import shutil
 import sys
+import traceback
 import warnings
 from tkinter import Tk
 from tkinter.filedialog import askopenfilename, askopenfilenames
@@ -104,9 +105,8 @@ def statistics_exam(excel, csv_list, export_type):
             else:
                 for i in range(len(csv.data)):
                     index = find(excel, csv.get(i, FIELD_REAL_NAME))
-                    score = csv.get(i, FIELD_SCORE)
-                    if index is not None and excel.get(index, FIELD_SCORE) < score:
-                        excel.set(index, FIELD_SCORE, score)
+                    if index is not None:
+                        excel.set(index, FIELD_SCORE, csv.get(i, FIELD_SCORE))
                 output(excel, excel.filename)
 
 
@@ -241,8 +241,7 @@ def main_func(select_str):
         sys.exit()
     else:
         print("输入不正确，请重新输入")
-    print("执行完毕")
-    input("按Enter键继续。。。")
+    input("执行完毕，按Enter键继续。。。")
 
 
 def merge_paper():
@@ -256,14 +255,20 @@ def merge_paper():
             name = csv.get(i, FIELD_REAL_NAME)
             if name in name_ls:
                 index = name_ls.index(name)
-                score_origin = result.get(index, FIELD_SCORE)
-                score_new = csv.get(i, FIELD_SCORE)
+                score_origin = float(result.get(index, FIELD_SCORE))
+                score_new = float(csv.get(i, FIELD_SCORE))
                 if score_new > score_origin:
                     result.set(index, FIELD_SCORE, score_new)
                     result.set(index, FIELD_OBJECTIVE_SCORE, csv.get(i, FIELD_OBJECTIVE_SCORE))
                     result.set(index, FIELD_SUBJECTIVE_SCORE, csv.get(i, FIELD_SUBJECTIVE_SCORE))
             else:
                 result.data.append(csv.getRow(i))
+    score_index = result.title.index(FIELD_SCORE)
+    result.data.sort(key=lambda item: float(item[score_index]))
+    sum_rst = 0
+    for score in result.getCol(FIELD_SCORE):
+        sum_rst += float(score)
+    result.data.append(["平均分:%.2f" % (sum_rst / len(result.data))])
     output(result, result.filename)
 
 
@@ -334,14 +339,16 @@ if __name__ == '__main__':
     while True:
         try:
             print(MENU_MAIN)
-            in_s = input("请输入:").strip()
+            in_s: str = input("请输入:").strip()
             if in_s.isdigit():
                 main_func(in_s)
                 print(MENU_MAIN)
             else:
                 print("未找到对应项")
         except Exception as e:
-            print(e.__str__())
             if isinstance(e, CsvReadException):
-                print("按Enter继续。。。")
-                input()
+                input("按Enter继续。。。")
+            else:
+                tb_list = traceback.extract_tb(sys.exc_info()[2])
+                line_number = tb_list[-1][1]
+                print(e, f"at {line_number} line.")
