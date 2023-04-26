@@ -264,7 +264,7 @@ def merge_paper():
             else:
                 result.data.append(csv.getRow(i))
     score_index = result.title.index(FIELD_SCORE)
-    result.data.sort(key=lambda item: float(item[score_index]))
+    result.data.sort(key=lambda item: float(item[score_index]), reverse=True)
     sum_rst = 0
     for score in result.getCol(FIELD_SCORE):
         sum_rst += float(score)
@@ -332,6 +332,7 @@ def select_file(filetypes=None):
 
 
 if __name__ == '__main__':
+    err_info = None
     current_path = os.path.realpath(os.path.dirname(sys.argv[0])) + "/"
     if not os.path.exists(current_path + "out"):
         os.makedirs(current_path + "out")
@@ -339,6 +340,9 @@ if __name__ == '__main__':
     while True:
         try:
             print(MENU_MAIN)
+            if err_info is not None:
+                print(err_info)
+                err_info = None
             in_s: str = input("请输入:").strip()
             if in_s.isdigit():
                 main_func(in_s)
@@ -351,4 +355,4 @@ if __name__ == '__main__':
             else:
                 tb_list = traceback.extract_tb(sys.exc_info()[2])
                 line_number = tb_list[-1][1]
-                print(e, f"at {line_number} line.")
+                err_info = f"刚刚发生了异常:{e.__str__()} at {line_number} line."
