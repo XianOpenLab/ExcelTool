@@ -1,23 +1,29 @@
 import openpyxl
+import pandas as pd
 import xlrd
 
 
 # 读取excel函数
-def read_excel(path):
+def read_excel(path, sn=None):
     if path.endswith(".xlsx"):
-        wb = openpyxl.load_workbook(path)  # 读取excel文件
-        sheet = wb.active
-        row_data = []
-        row_len = 0
-        for row in sheet.rows:
-            if row_len == 0:
-                row_len = get_row_len(row)
-            item = [row[i].value for i in range(row_len)]
-            if is_none(item):
-                break
+        sheet_names = pd.ExcelFile(path).sheet_names
+        if sn is None:
+            # 读取.xlsx文件中的第二张表
+            if "结课表" in sheet_names:
+                df = pd.read_excel(path, sheet_name="结课表")
             else:
-                row_data.append(item)
-        return row_data
+                df = pd.read_excel(path, sheet_name=sheet_names[0])
+        else:
+            df = pd.read_excel(path, sheet_name=sn)
+
+        # 将所有数据放到二维列表中
+
+        data: list = df.values.tolist()
+        data.insert(0, df.keys().tolist())
+        # 打印二维列表的内容
+
+        return data
+
     else:
         file = xlrd.open_workbook(path)
         sheet = file.sheet_by_index(0)
@@ -56,8 +62,3 @@ def write_excel(path, row_data):
         sheet.append(row)
     wb.save(path)
     print("写入数据成功！文件保存在：" + path)
-
-
-if __name__ == "__main__":
-    __filePath = "/Users/musicbear/欧朋/test/2022.12.31-PYTHON-寒假班结课统计表.xlsx"
-    read_excel(__filePath)

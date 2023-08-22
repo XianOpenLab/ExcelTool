@@ -202,10 +202,11 @@ def select_out_type(step_type):
             if num == EXPORT_WITH_FORM:
                 file = select_file()
                 if file.endswith(".xlsx") or file.endswith(".xls"):
-                    return Sheet(os.path.basename(file),
-                                 excelParser.read_excel(file)), csv_list, EXPORT_WITH_FORM
+                    sheet = Sheet(os.path.basename(file), excelParser.read_excel(file))
+                    return sheet, csv_list, EXPORT_WITH_FORM
                 else:
-                    return Sheet(os.path.basename(file), csvParser.read_csv(file)), csv_list, EXPORT_WITH_FORM
+                    sheet = Sheet(os.path.basename(file), csvParser.read_csv(file))
+                    return sheet, csv_list, EXPORT_WITH_FORM
             elif num == EXPORT_NEW:
                 title = [FIELD_INDEX, FIELD_NAME]
                 excel = Sheet("output.xlsx", [title])
@@ -354,5 +355,4 @@ if __name__ == '__main__':
                 input("按Enter继续。。。")
             else:
                 tb_list = traceback.extract_tb(sys.exc_info()[2])
-                line_number = tb_list[-1][1]
-                err_info = f"刚刚发生了异常:{e.__str__()} at {line_number} line."
+                err_info = f"刚刚发生了异常:{e.__str__()}\r\n在{os.path.basename(tb_list[0].filename)} {tb_list[0].end_lineno}行."

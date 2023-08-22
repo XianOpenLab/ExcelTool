@@ -36,7 +36,7 @@ def read_csv(file):
         except Exception as e:
             print(e)
             raise CsvReadException(
-                "《" + os.path.basename(file) + "》编码格式异常，请用wps或者office另存为，最好指定为utf-8")
+                "《" + os.path.basename(file) + "》编码格式异常，请用wps或者office另存为，指定为utf-8")
 
     # 输出读取的CSV文件内容
     csv_file.close()
