@@ -1,9 +1,11 @@
 import os
 import shutil
 import sys
+import traceback
 
 from openlabTool import excelParser, csvParser, pic2excel
 from openlabTool.constants import *
+from openlabTool.customException import CsvReadException
 from openlabTool.deleteInfo import DeleteInfo
 from openlabTool.examinfo import ExamInfo
 from openlabTool.student import Student
@@ -69,7 +71,6 @@ def modifyExcel():
         for name, score in exam_result.items():
             excel.setScore(name, score)
         excelParser.write_excel(output + os.path.basename(filename[0]), excel.getResult())
-        input("数据添加成功，按任意键结束")
     else:
         print("待修改文件只能有一个")
         print(ENTER_CONTINUE)
@@ -123,7 +124,6 @@ def main_func(num):
             print("excel文件已生成:" + file_path)
     elif num == "0":
         sys.exit()
-        pass
 
 
 def makeDir(*args):
@@ -137,7 +137,7 @@ if __name__ == '__main__':
 
     makeDir("结果", "图片", "考试", "作业", "删除")
     while True:
-        # try:
+        try:
             print(MENU_MAIN)
             if err_info is not None:
                 print(err_info)
@@ -145,12 +145,14 @@ if __name__ == '__main__':
             in_s: str = input("请输入:").strip()
             if in_s.isdigit():
                 main_func(in_s)
-                print(MENU_MAIN)
+                print("按enter键继续")
+                enterContinue()
             else:
                 print("未找到对应项")
-        # except Exception as e:
-        #     if isinstance(e, CsvReadException):
-        #         input("按Enter继续。。。")
-        #     else:
-        #         tb_list = traceback.extract_tb(sys.exc_info()[2])
-        #         err_info = f"刚刚发生了异常:{e.__str__()}\r\n在{os.path.basename(tb_list[0].filename)} {tb_list[0].lineno}行."
+        except Exception as e:
+            if isinstance(e, CsvReadException):
+                print("按enter键继续")
+                enterContinue()
+            else:
+                tb_list = traceback.extract_tb(sys.exc_info()[2])
+                err_info = f"刚刚发生了异常:{e.__str__()}\r\n在{os.path.basename(tb_list[0].filename)} {tb_list[0].lineno}行."
