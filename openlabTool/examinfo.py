@@ -1,4 +1,3 @@
-from openlabTool import excelParser
 from openlabTool.baseSheet import BaseSheet
 
 
@@ -7,7 +6,7 @@ class ExamInfo(BaseSheet):
         super().__init__(form)
         self.__score_index = self.titles.index("得分")
         for item in self.data:
-            name = item[self.name_index]
+            name = self.name(item)
             if name in self.data_dict.keys():
                 raise Exception("重名了，处理去")
             else:

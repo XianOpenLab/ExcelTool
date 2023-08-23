@@ -1,4 +1,3 @@
-from openlabTool import excelParser
 from openlabTool.baseSheet import BaseSheet
 
 
@@ -10,9 +9,9 @@ class Student(BaseSheet):
         self.__score_index = self.__find_index(score_list, "得分")
         self.__commit_index = self.__find_index(commit_list, "作业率")
         for item in self.data:
-            name = item[self.name_index]
+            name = self.name(item)
             if name not in self.data_dict.keys():
-                self.data_dict[name] = item[2:]
+                self.data_dict[name] = item
             else:
                 raise Exception("表单中有重名的同学，请做处理")
 
@@ -25,18 +24,15 @@ class Student(BaseSheet):
 
     def setScore(self, name, score):
         if name in self.data_dict.keys():
-            self.data_dict[name][self.__score_index - 2] = score
+            self.data_dict[name][self.__score_index] = score
 
     def setCommit(self, name, commit):
         if name in self.data_dict.keys():
-            self.data_dict[name][self.__commit_index - 2] = commit
+            self.data_dict[name][self.__commit_index] = commit
 
     def getResult(self):
         result = []
-        for row in self.data:
-            name = row[self.name_index]
-            ls = [row[0], name]
-            ls.extend(self.data_dict[name])
-            result.append(ls)
+        for v in self.data_dict.values():
+            result.append(v)
         result.insert(0, self.titles)
         return result

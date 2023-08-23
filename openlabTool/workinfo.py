@@ -1,4 +1,3 @@
-from openlabTool import excelParser
 from openlabTool.baseSheet import BaseSheet
 
 
@@ -7,7 +6,7 @@ class WorkInfo(BaseSheet):
         super().__init__(form)
         self.__status_index = self.titles.index("提交状态")
         for item in self.data:
-            name = item[self.name_index]
+            name = self.name(item)
             if name not in self.data_dict:
                 self.data_dict[name] = True if item[self.__status_index] == "已提交" else False
             else:
