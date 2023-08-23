@@ -1,4 +1,4 @@
-from openlabTool.baseSheet import BaseSheet
+from baseSheet import BaseSheet
 
 
 class WorkInfo(BaseSheet):

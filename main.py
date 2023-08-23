@@ -3,13 +3,15 @@ import shutil
 import sys
 import traceback
 
-from openlabTool import excelParser, csvParser, pic2excel
-from openlabTool.constants import *
-from openlabTool.customException import CsvReadException
-from openlabTool.deleteInfo import DeleteInfo
-from openlabTool.examinfo import ExamInfo
-from openlabTool.student import Student
-from openlabTool.workinfo import WorkInfo
+import csvParser
+import excelParser
+import pic2excel
+from constants import *
+from customException import *
+from deleteInfo import DeleteInfo
+from examinfo import ExamInfo
+from student import Student
+from workinfo import WorkInfo
 
 work_path = "作业/"
 exam_path = "考试/"
@@ -63,7 +65,7 @@ def getExamInfo():
 def modifyExcel():
     work_result = getWorkCommit()
     exam_result = getExamInfo()
-    filename = [file for file in os.listdir(".") if file.endswith(".xlsx") or file.endswith(".xls")]
+    filename = [file for file in os.listdir("openlabTool") if file.endswith(".xlsx") or file.endswith(".xls")]
     if len(filename) == 1:
         excel = Student(excelParser.read_excel(filename[0]))
         for name, commit in work_result.items():
@@ -94,7 +96,7 @@ def delete():
             di = DeleteInfo(excelParser.read_excel(delete_path + file))
             s = set(di.name_list())
             delete_set = delete_set.union(s)
-    filename = [file for file in os.listdir(".") if file.endswith(".xlsx") or file.endswith(".xls")]
+    filename = [file for file in os.listdir("openlabTool") if file.endswith(".xlsx") or file.endswith(".xls")]
     if len(filename) == 1:
         excel = Student(excelParser.read_excel(filename[0]))
         for item in delete_set:
