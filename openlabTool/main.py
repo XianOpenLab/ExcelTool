@@ -159,4 +159,4 @@ if __name__ == '__main__':
                 enterContinue()
             else:
                 tb_list = traceback.extract_tb(sys.exc_info()[2])
-                err_info = f"刚刚发生了异常:{e.__str__()}\r\n在{os.path.basename(tb_list[0].filename)} {tb_list[0].lineno}行."
+                err_info = f"刚刚发生了异常:{e.__str__()}\r\n在{os.path.basename(tb_list[len(tb_list)-1].filename)} {tb_list[len(tb_list)-1].lineno}行."
