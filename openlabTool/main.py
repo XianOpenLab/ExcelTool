@@ -116,12 +116,16 @@ def main_func(num):
         enterContinue()
         delete()
     elif num == "3":
+        print(MENU_OCR)
+        enterContinue()
         png_ls = [file for file in os.listdir(png_path) if
                   file.endswith(".png") or file.endswith(".jpg") or file.endswith(".jpeg")]
         for png in png_ls:
             file_path = pic2excel.image2excel(png)
             file_path = shutil.move(file_path, output + os.path.basename(file_path))
             print("excel文件已生成:" + file_path)
+        print("按enter键继续")
+        enterContinue()
     elif num == "0":
         sys.exit()
 
